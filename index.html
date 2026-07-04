@@ -18,7 +18,7 @@
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);
-  font:17px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+  font:17px/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 /* visible keyboard focus for all interactive elements */
@@ -38,7 +38,11 @@ a:focus-visible,button:focus-visible,.chip:focus-visible,
   position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
 a.brand{font-weight:700;letter-spacing:.2px;color:var(--ink);cursor:pointer}
 a.brand:hover{text-decoration:none;opacity:.62}
-.chan-nav{display:flex;align-items:center;gap:2px}
+/* the tier nav must never set the page width: on narrow screens it slides
+   sideways (scrollbar hidden) while the article body fits the viewport */
+.chan-nav{display:flex;align-items:center;gap:2px;min-width:0;max-width:100%;
+  overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.chan-nav::-webkit-scrollbar{display:none}
 .chan-nav .sep{color:var(--faint);font-weight:400;pointer-events:none;margin:0 1px}
 .chan-nav .chan{font-size:14.5px;color:var(--muted);padding:2px 9px;border-radius:7px;cursor:pointer;white-space:nowrap}
 .chan-nav .chan:hover{color:var(--ink);text-decoration:none;background:var(--chip)}
