@@ -21,124 +21,108 @@
 <description>Q1 13Fs across 17 famous funds: out of software mega-caps, into chips, memory, and power. Alphabet is the quiet consensus buy, Ackman went the other way, and Druckenmiller is betting on Argentina.</description>
 <media:thumbnail url="https://kairosllm.github.io/smart-money/favicon-512.png"/>
 <content:encoded><![CDATA[<p><em>Q1 13Fs across 17 famous funds: out of software mega-caps, into chips, memory, and power. Alphabet is the quiet consensus buy, Ackman went the other way, and Druckenmiller is betting on Argentina.</em></p>
-<p><em>What billionaire investors are actually doing, straight from SEC EDGAR: 13F holdings changes across 17 famous funds, fresh activist stakes (SCHEDULE 13D), and insider open-market buys (Form 4). First edition — this one establishes the baseline.</em></p>
+<p><em>What billionaire investors are actually doing, straight from SEC EDGAR: 13F holdings changes across 17 famous funds, fresh activist stakes, and insider open-market buys. First edition, so this one sets the baseline.</em></p>
 <hr/>
-<h2>TL;DR</h2>
+<h2>The TLDR</h2>
 <ul>
-<li><strong>The whales are rotating within the AI trade, not out of it</strong> — selling software mega-caps (Microsoft, Salesforce, Oracle, Snowflake) and buying the physical layer: chips, memory, fab equipment, data centers, and the power to run them.</li>
+<li><strong>The whales are rotating within the AI trade, not out of it.</strong> They sold the software mega-caps (Microsoft, Salesforce, Oracle, Snowflake) and bought the physical layer: chips, memory, fab equipment, data centers, and the power to run them.</li>
 <li><strong>Alphabet is the quiet consensus buy.</strong> Berkshire tripled its stake to $15.6B. Third Point, Lone Pine, and Bridgewater all opened or added.</li>
 <li><strong>Ackman went the other way</strong>, opening a new $2.1B Microsoft position (15% of his book) while everyone else trimmed it.</li>
-<li><strong>Druckenmiller is betting on Argentina</strong> — YPF up +433%, plus a new Argentina ETF position.</li>
+<li><strong>Druckenmiller is betting on Argentina.</strong> YPF up +433%, plus a new Argentina ETF position.</li>
 <li><strong>Insider tape this week:</strong> the entire Simon Property board bought stock together, and EV-charging maker Wallbox saw its CEO plus three directors buy $5M at once.</li>
 </ul>
 <hr/>
-<h2>1. The Big Rotation: out of software, into silicon and power</h2>
-<p>The most striking pattern across Q1 13Fs (period ending March 31, filed mid-May) is how many unrelated funds made the <em>same</em> trade:</p>
-<p><strong>Sold software mega-caps:</strong></p>
-<ul>
-<li>Microsoft: trimmed −54% by Tiger Global, −82% by Tepper, exited entirely by Lone Pine and Third Point</li>
-<li>Bridgewater exited Salesforce ($512M), Workday, and ServiceNow outright</li>
-<li>Coatue exited Oracle ($865M), Snowflake ($544M), Adobe, AMD, and Arm</li>
-</ul>
-<p><strong>Bought AI hardware, memory, and fab equipment:</strong></p>
-<ul>
-<li>TSMC: Tiger +49% (to $1.9B), Bridgewater opened a new $364M position, Coatue holds it as their #1 at 10.8% of book</li>
-<li>Memory/storage everywhere: Tepper made Micron his #2 holding (9.5%) and opened Sandisk; Druckenmiller opened Sandisk <em>and</em> Seagate; Bridgewater added Micron +66%; Coatue opened Micron</li>
-<li>Equipment: Tiger added Applied Materials +85%; Bridgewater added KLA +39%, Teradyne +70%, Credo +220%; Lone Pine opened a $555M Teradyne position</li>
-<li>Coatue opened a <strong>$1.1B Equinix</strong> (data center REIT) position and $655M of ASML</li>
-</ul>
-<p><strong>Bought the power layer:</strong></p>
-<ul>
-<li>Vistra: Tepper +114%, Lone Pine holds it as their #1 position</li>
-<li>Lone Pine added Talen Energy +41% and opened TeraWulf, Hut 8, and Argan (power plant builder) — a straight "who builds and feeds data centers" basket</li>
-<li>Coatue's #2 holding is GE Vernova (7.7% of book)</li>
-</ul>
-<p><strong>The read:</strong> the smart money isn't calling the AI trade over — they're calling the <em>software</em> part crowded and moving down the stack to compute, memory, and electricity. Retail is still mostly arguing about chatbot subscriptions.</p>
+<h2>1. The big rotation: out of software, into silicon and power</h2>
+<p>A 13F is the quarterly holdings snapshot big funds are forced to file, and the Q1 batch (positions as of March 31, filed mid-May) has one pattern that jumps off the page. A bunch of unrelated funds made the <em>same</em> trade.</p>
+<p><strong>They sold software mega-caps.</strong> Microsoft got trimmed −54% by Tiger Global and −82% by Tepper, and Lone Pine and Third Point exited entirely. Bridgewater dumped Salesforce ($512M), Workday, and ServiceNow outright. Coatue exited Oracle ($865M), Snowflake ($544M), Adobe, AMD, and Arm.</p>
+<p><strong>They bought AI hardware, memory, and fab equipment.</strong> TSMC: Tiger +49% to $1.9B, Bridgewater opened a new $364M position, and Coatue holds it as their #1 at 10.8% of book. Memory is everywhere: Tepper made Micron his #2 holding (9.5%) and opened Sandisk, Druckenmiller opened Sandisk <em>and</em> Seagate, Bridgewater added Micron +66%, Coatue opened Micron. Equipment too: Tiger added Applied Materials +85%, Bridgewater added KLA +39%, Teradyne +70%, and Credo +220%, and Lone Pine opened a $555M Teradyne position. Coatue opened a <strong>$1.1B Equinix</strong> (data center REIT) position and $655M of ASML.</p>
+<p><strong>They bought the power layer.</strong> Vistra: Tepper +114%, and Lone Pine holds it as their #1 position. Lone Pine also added Talen Energy +41% and opened TeraWulf, Hut 8, and Argan (a power plant builder). That is a straight "who builds and feeds data centers" basket. Coatue's #2 holding is GE Vernova at 7.7% of book.</p>
+<p><strong>My read:</strong> the smart money is not calling the AI trade over. They're calling the <em>software</em> part crowded and moving down the stack to compute, memory, and electricity. Retail is still arguing about chatbot subscriptions.</p>
 <h2>2. The Alphabet accumulation</h2>
 <ul>
-<li><strong>Berkshire</strong> added +204% to GOOGL — now a $15.6B position, 5.9% of the book, their 7th largest. They also opened a smaller new GOOG lot while exiting Visa, Mastercard, UnitedHealth, and Domino's.</li>
-<li><strong>Third Point</strong> and <strong>Lone Pine</strong> opened new GOOGL positions; <strong>Bridgewater</strong> added +26% and opened GOOG.</li>
-<li>Counterpoint: Coatue trimmed −37% and Pershing Square nearly exited (−95%), so it's not unanimous — but the buyer list is heavyweight.</li>
+<li><strong>Berkshire</strong> added +204% to GOOGL. It's now a $15.6B position, 5.9% of the book, their 7th largest. They also opened a smaller new GOOG lot while exiting Visa, Mastercard, UnitedHealth, and Domino's.</li>
+<li><strong>Third Point</strong> and <strong>Lone Pine</strong> opened new GOOGL positions. <strong>Bridgewater</strong> added +26% and opened GOOG.</li>
+<li>The counterpoint: Coatue trimmed −37% and Pershing Square nearly exited (−95%). So it's not unanimous. But look at the buyer list. That's heavyweight money.</li>
 </ul>
 <h2>3. Contrarian corner</h2>
 <ul>
-<li><strong>Ackman (Pershing Square): new $2.1B Microsoft position</strong> — 15.3% of his concentrated 11-stock book — initiated exactly while Tiger, Tepper, Lone Pine, and Third Point were cutting it. Also exited Hilton and nearly exited Alphabet.</li>
-<li><strong>Buffett bought an airline again</strong>: new $2.6B Delta position (he famously swore off airlines in 2020). Also added Lennar +43% (homebuilder value) and NYT +199%.</li>
-<li><strong>Burry watch:</strong> Scion's last 13F is still Q3 2025 — 66% of it was Palantir puts and 13.5% Nvidia puts — and he hasn't filed since (deregistered). No current data, but worth remembering the biggest AI skeptic went dark holding shorts.</li>
-<li><strong>Elliott</strong> is positioned defensively: new puts on consumer discretionary (XLY), high-yield credit (HYG), and small caps (IWM), plus new gold-miner calls (GDX) — while holding Phillips 66 and Suncor as top longs and adding HPE +47%.</li>
-<li><strong>Einhorn (now filing as DME Capital)</strong>: new positions in Versant Media ($112M), Crocs, and Resideo; still 19% Green Brick Partners.</li>
-<li><strong>ValueAct</strong>: opened KKR ($303M, 5.3% of book), Spotify ($174M), and Wix.</li>
-<li><strong>Druckenmiller</strong>: besides Argentina (YPF +433%, new ARGT ETF), his #1 is still Natera (18% of book) and he added STMicro +238% while exiting his XLF financials hedge.</li>
+<li><strong>Ackman (Pershing Square): new $2.1B Microsoft position</strong>, 15.3% of his concentrated 11-stock book, initiated exactly while Tiger, Tepper, Lone Pine, and Third Point were cutting it. He also exited Hilton and nearly exited Alphabet. Someone is wrong here, and Ackman is fine being the one to find out.</li>
+<li><strong>Buffett bought an airline again.</strong> New $2.6B Delta position, from the man who famously swore off airlines in 2020. He also added Lennar +43% (homebuilder value) and NYT +199%.</li>
+<li><strong>Burry watch:</strong> Scion's last 13F is still Q3 2025. It was 66% Palantir puts and 13.5% Nvidia puts (a put is a bet the stock FALLS, a short), and he hasn't filed since. He deregistered. No current data, but remember the biggest AI skeptic went dark holding shorts.</li>
+<li><strong>Elliott</strong> is positioned for trouble: new puts on consumer discretionary (XLY), high-yield credit (HYG), and small caps (IWM), plus new gold-miner calls (GDX). Meanwhile they hold Phillips 66 and Suncor as top longs and added HPE +47%.</li>
+<li><strong>Einhorn (now filing as DME Capital):</strong> new positions in Versant Media ($112M), Crocs, and Resideo, still 19% Green Brick Partners.</li>
+<li><strong>ValueAct:</strong> opened KKR ($303M, 5.3% of book), Spotify ($174M), and Wix.</li>
+<li><strong>Druckenmiller:</strong> the Argentina bet (YPF +433%, new ARGT ETF), his #1 is still Natera at 18% of book, he added STMicro +238%, and he exited his XLF financials hedge.</li>
 </ul>
-<h2>4. Activist corner (fresh 13Ds — these are near-real-time)</h2>
-<p>New ≥5% activist stakes filed in the last two weeks:</p>
+<h2>4. Activist corner (fresh 13Ds, these are near-real-time)</h2>
+<p>A 13D means someone crossed 5% of a company and intends to make noise about it. New ones in the last two weeks:</p>
 <ul>
-<li><strong>JANA Partners → Alkami Technology (ALKT)</strong> — a proven activist targeting a bank-software vendor (June 29)</li>
+<li><strong>JANA Partners → Alkami Technology (ALKT)</strong>, a proven activist targeting a bank-software vendor (June 29)</li>
 <li><strong>Farallon → Centessa Pharmaceuticals (CNTA)</strong> (June 24)</li>
-<li><strong>Two funds hit Office Properties Income Trust (OPI) on the same day</strong> — Helix Partners and Redwood Capital (June 25); distressed office REIT with two activists circling</li>
-<li><strong>INEOS → Manchester United (MANU)</strong> — Ratcliffe consolidating (June 29)</li>
-<li><strong>Tang Capital → Nano Dimension (NNDM)</strong> (June 30); Tang also bought $806k of Boundless Bio (BOLD) stock this week per Form 4</li>
-<li><strong>Lynx1 → Passage Bio (PASG)</strong>; <strong>Perceptive + ARCH → Kardigan</strong> (private-to-be-public biotech)</li>
+<li><strong>Two funds hit Office Properties Income Trust (OPI) on the same day</strong>, Helix Partners and Redwood Capital (June 25). A distressed office REIT with two activists circling at once.</li>
+<li><strong>INEOS → Manchester United (MANU)</strong>, Ratcliffe consolidating (June 29)</li>
+<li><strong>Tang Capital → Nano Dimension (NNDM)</strong> (June 30). Tang also bought $806k of Boundless Bio (BOLD) stock this week per Form 4.</li>
+<li><strong>Lynx1 → Passage Bio (PASG)</strong>, and <strong>Perceptive + ARCH → Kardigan</strong> (private-to-be-public biotech)</li>
 </ul>
-<p>Notable amendments (existing campaigns moving): Trian ↔ Janus Henderson, Elliott ↔ Triple Flag Precious Metals, Toyota ↔ Joby Aviation, Biglari ↔ El Pollo Loco, D.E. Shaw ↔ Gossamer Bio, Legion + 22NW both in Lifecore Biomedical.</p>
+<p>Amendments where existing campaigns are moving: Trian at Janus Henderson, Elliott at Triple Flag Precious Metals, Toyota at Joby Aviation, Biglari at El Pollo Loco, D.E. Shaw at Gossamer Bio, and Legion plus 22NW both in Lifecore Biomedical.</p>
 <h2>5. Insider conviction buys (Form 4, open-market purchases only, July 1–2 filings)</h2>
-<p>Cluster buys — multiple insiders buying together, the strongest insider signal:</p>
+<p>Cluster buys first (multiple insiders buying together, the strongest insider signal there is):</p>
 <ul>
-<li><strong>Simon Property Group (SPG): 9 directors bought simultaneously</strong> (~$478k total). Board-wide buys at a blue-chip mall REIT are rare.</li>
+<li><strong>Simon Property Group (SPG): 9 directors bought simultaneously</strong> (~$478k total). A board-wide buy at a blue-chip mall REIT almost never happens.</li>
 <li><strong>Wallbox (WBX): CEO + 3 directors bought $5M</strong> in the EV-charging maker (June 30)</li>
-<li><strong>Polestar (PSNY): 6 directors/officers bought</strong> (~$256k)</li>
-<li><strong>Nuvectis Pharma (NVCT): 2 insiders, $1.2M</strong> — CEO Bentsur $500k + a 10% owner $916k</li>
-<li><strong>Creative Realities (CREX): CEO bought $700k</strong> (200k shares at $3.50) alongside the CFO — <em>and</em> the same CEO filed a 13D/A this week. Micro-cap, but insiders are acting like owners.</li>
+<li><strong>Polestar (PSNY): 6 directors and officers bought</strong> (~$256k)</li>
+<li><strong>Nuvectis Pharma (NVCT): 2 insiders, $1.2M.</strong> CEO Bentsur put in $500k and a 10% owner $916k.</li>
+<li><strong>Creative Realities (CREX): the CEO bought $700k</strong> (200k shares at $3.50) alongside the CFO, <em>and</em> the same CEO filed a 13D/A this week. Micro-cap, but these insiders are acting like owners.</li>
 </ul>
-<p>Notable large buys: <strong>Uber added $20M to Lime</strong> (Neutron Holdings — pre-IPO scooter company, Uber now averaging up as 10% owner); RH director Carlos Alberini bought $1.8M; Hartree Partners added $4.5M of Hudson Technologies (HDSN); Bradesco's CLO bought $2M of BBD.</p>
+<p>Notable large singles: <strong>Uber added $20M to Lime</strong> (Neutron Holdings, the pre-IPO scooter company, and Uber is averaging up as a 10% owner). RH director Carlos Alberini bought $1.8M. Hartree Partners added $4.5M of Hudson Technologies (HDSN). Bradesco's CLO bought $2M of BBD.</p>
 <h2>6. What retail isn't looking at yet</h2>
 <ol>
-<li><strong>Memory and storage as the AI bottleneck trade</strong> — Micron, Sandisk, Seagate showing up as <em>new</em> positions across four unrelated whale books is the closest thing to a coordinated signal in this data.</li>
-<li><strong>Power infrastructure as a compounding theme, not a meme</strong> — Vistra/Talen/GE Vernova/Argan/TeraWulf across multiple books; retail talks about it, but the whales keep sizing it up.</li>
-<li><strong>Argentina</strong> — Druckenmiller quintupling YPF and buying the country ETF is a macro bet almost nobody retail-side is positioned for.</li>
-<li><strong>Office real estate distress as an activist hunting ground</strong> — two funds filing 13Ds on OPI the same day suggests the bottom-fishing has started.</li>
-<li><strong>Boards buying their own beaten-down names</strong> (SPG, WBX, PSNY) while indices sit near highs — insiders see value where the narrative is coldest.</li>
+<li><strong>Memory and storage as the AI bottleneck trade.</strong> Micron, Sandisk, and Seagate showing up as <em>new</em> positions across four unrelated whale books is the closest thing to a coordinated signal in this data.</li>
+<li><strong>Power infrastructure as a compounding theme, not a meme.</strong> Vistra, Talen, GE Vernova, Argan, TeraWulf, across multiple books, and the whales keep sizing it up while retail just talks about it.</li>
+<li><strong>Argentina.</strong> Druckenmiller quintupling YPF and buying the country ETF is a macro bet almost nobody retail-side is positioned for.</li>
+<li><strong>Office real estate distress as an activist hunting ground.</strong> Two funds filing 13Ds on OPI the same day tells me the bottom-fishing has started.</li>
+<li><strong>Boards buying their own beaten-down names</strong> (SPG, WBX, PSNY) while the indices sit near highs. Insiders see value exactly where the narrative is coldest.</li>
 </ol>
 <hr/>
-<h2>Caveats</h2>
+<h2>Caveats, because I'm honest about the lag</h2>
 <ul>
-<li>13F data is as of <strong>March 31, 2026</strong> (filed May 15) — the latest legally available snapshot, ~3 months stale. Positions may have changed. 13Fs also omit shorts, bonds, and non-US-listed holdings (e.g. Burry's book was mostly <em>puts</em>, which do show; Elliott's activist positions are often in derivatives that don't).</li>
-<li>13D and Form 4 data is current through <strong>July 2</strong> (July 3–4 = market holiday).</li>
-<li>Dollar values for 13F positions are as of quarter-end prices.</li>
-<li>This is data + pattern-reading, not investment advice.</li>
+<li>The 13F data is as of <strong>March 31, 2026</strong> (filed May 15). That's the latest legally available snapshot and it's ~3 months stale. Positions may have changed. 13Fs also omit shorts, bonds, and non-US-listed holdings (Burry's book was mostly <em>puts</em>, which do show, while Elliott's activist positions are often in derivatives that don't).</li>
+<li>The 13D and Form 4 data is current through <strong>July 2</strong> (July 3–4 was the market holiday).</li>
+<li>Dollar values for 13F positions are at quarter-end prices.</li>
+<li>This is data plus pattern-reading, not investment advice.</li>
 </ul>
-<p><em>Generated from SEC EDGAR via edgartools. Watchlist: Berkshire, Scion, Pershing Square, Duquesne, Appaloosa, Baupost, Third Point, Greenlight/DME, Icahn, Elliott, Starboard, ValueAct, Coatue, Lone Pine, Tiger Global, Bridgewater, Soros.</em></p>]]></content:encoded>
+<p><em>The watchlist: Berkshire, Scion, Pershing Square, Duquesne, Appaloosa, Baupost, Third Point, Greenlight/DME, Icahn, Elliott, Starboard, ValueAct, Coatue, Lone Pine, Tiger Global, Bridgewater, Soros.</em></p>]]></content:encoded>
 </item>
 <item>
-<title>[Daily Tape] Wallbox board and CEO buy $5M in unison as Uber puts $20M into Lime</title>
+<title>[Daily Tape] Wallbox's board and CEO just bought $5M together, and Uber quietly put $20M into Lime</title>
 <link>https://kairosllm.github.io/smart-money/daily/2026-07-04.html</link>
 <guid isPermaLink="false">smart-money-daily-2026-07-04</guid>
 <dc:creator>Kairos</dc:creator>
 <category>Daily Tape</category>
 <pubDate>Sat, 04 Jul 2026 08:00:00 -0400</pubDate>
-<description>A clean EV-charging insider cluster leads a quiet holiday tape, with two fresh biotech 13Ds and a strategic corporate accumulator scaling up.</description>
+<description>A board-plus-CEO cluster at multi-year lows is the only print that matters on a sleepy holiday tape. Two biotech 13Ds and a $6M director buy round it out.</description>
 <media:thumbnail url="https://kairosllm.github.io/smart-money/favicon-512.png"/>
-<content:encoded><![CDATA[<p><em>A clean EV-charging insider cluster leads a quiet holiday tape, with two fresh biotech 13Ds and a strategic corporate accumulator scaling up.</em></p>
-<p>No watchlist-whale 13Ds, early 13Fs, or Scion filings crossed the wire. The tape today is carried by a clean EV-charging insider cluster and a strategic corporate accumulator.</p>
+<content:encoded><![CDATA[<p><em>A board-plus-CEO cluster at multi-year lows is the only print that matters on a sleepy holiday tape. Two biotech 13Ds and a $6M director buy round it out.</em></p>
+<p>Quiet holiday wire. No whale 13Ds, no early 13Fs, no Burry sightings. But one insider print today is the kind I actually care about, so let's get to it.</p>
+<h2>The only real story: WBX</h2>
+<p><strong>WBX</strong> (Wallbox N.V.). Four insiders bought ~$5.0M of the EV-charging maker on the same day. Three directors at <strong>$1.36M each</strong>, plus CEO Enric Asuncion Escorsa adding <strong>$887k</strong> of his own. That is a cluster buy (multiple insiders buying together, the strongest insider signal there is), it is board-plus-CEO in unison, and it lands with the stock near multi-year lows. Insiders don't coordinate seven figures each into a falling chart for fun. Highest-conviction print on the tape, not close.</p>
 <h2>Fresh 13Ds</h2>
+<p>A 13D is an activist-scale stake, 5% or more with intent to do something about it. Two crossed today, both concentrated biotech money bottom-fishing:</p>
 <ul>
-<li><strong>CALC</strong> — Bering Partners II GP filed a new SCHEDULE 13D on <strong>CalciMedica</strong>, an immunology-focused biotech. A first-time activist-scale stake in a small-cap developer is worth a flag. <a href="https://www.sec.gov/Archives/edgar/data/1811744/0001193125-26-295162-index.html">Filing</a></li>
-<li><strong>PASG</strong> — Lynx1 Capital Management opened a 13D on <strong>Passage BIO</strong>, a gene-therapy name that has spent the year near cash value. Concentrated biotech money stepping in at the bottom of the range. <a href="https://www.sec.gov/Archives/edgar/data/1910456/0000902664-26-003000-index.html">Filing</a></li>
+<li><strong>CALC</strong> (CalciMedica). Bering Partners II GP filed a new SCHEDULE 13D on the immunology small-cap. First-time activist-scale money in a name this size gets my attention. <a href="https://www.sec.gov/Archives/edgar/data/1811744/0001193125-26-295162-index.html">Filing</a></li>
+<li><strong>PASG</strong> (Passage BIO). Lynx1 Capital Management opened a 13D on the gene-therapy name that has spent the year trading near cash value. Someone just decided the bottom of the range is investable. <a href="https://www.sec.gov/Archives/edgar/data/1910456/0000902664-26-003000-index.html">Filing</a></li>
 </ul>
-<p>Skipped as internal/affiliated plumbing: Gould Investors' twin 13Ds on <strong>BRT</strong> Apartments and <strong>OLP</strong> (One Liberty), the Jefferies-to-Jefferies-BDC filing, and the Hugreat/Alpex SPAC stake. On the amendment side, <strong>LFCR</strong> (Lifecore Biomedical) drew same-day 13D/A activity from <em>both</em> 22NW and Legion Partners — the seat-holders are still active, worth watching, but no fresh escalation disclosed.</p>
-<h2>Insider tape — clusters</h2>
+<p>The rest of today's 13D wire was plumbing and I'm not making you read it: Gould Investors' twin filings on <strong>BRT</strong> Apartments and <strong>OLP</strong> (internal, affiliated), a Jefferies-to-Jefferies BDC shuffle, and a Hugreat/Alpex SPAC stake. Skip.</p>
+<p>One amendment I do care about: <strong>LFCR</strong> (Lifecore Biomedical) drew same-day 13D/A activity from <em>both</em> 22NW and Legion Partners. No fresh escalation disclosed, but two activists touching the same small-cap on the same day means the seat-holders are still working.</p>
+<h2>The rest of the insider tape</h2>
 <ul>
-<li><strong>WBX</strong> (Wallbox N.V.) — the standout. Four insiders bought ~$5.0M of the EV-charging maker on the same day: three directors at <strong>$1.36M each</strong> plus CEO Enric Asuncion Escorsa adding <strong>$887k</strong>. Board-plus-CEO buying in unison, near multi-year lows, is the highest-conviction print on the tape.</li>
-<li><strong>CREX</strong> (Creative Realities) — CEO Richard Mills bought <strong>$700k</strong> and CFO Tamra Koshewa <strong>$100k</strong> of the digital-signage micro-cap, an $800k C-suite cluster at $3.50.</li>
-<li><strong>PSNY</strong> (Polestar) — three directors added a combined ~$78k. Small, but directional board buying in the EV maker.</li>
-</ul>
-<h2>Insider tape — notable singles</h2>
-<ul>
-<li><strong>LIME</strong> (Neutron Holdings) — <strong>Uber</strong> put <strong>$20M</strong> to work (800k shares at $25) lifting its stake in the micromobility operator. A strategic corporate buyer scaling up is a different signal than an insider, but the size demands notice.</li>
-<li><strong>BNR</strong> (Burning Rock Biotech) — director Yusheng Han disclosed <strong>$6.2M</strong> of open-market buying across the June 11 session in the China cancer-diagnostics name.</li>
-<li><strong>HDSN</strong> (Hudson Technologies) — Hartree Partners, a 10% owner, added <strong>$4.5M</strong> of the refrigerant reclaimer at ~$5.85.</li>
-<li><strong>BBD</strong> (Bank Bradesco) — CLO/executive officer Julio Cesar Bueno bought <strong>$2.0M</strong> of the Brazilian bank.</li>
-<li><strong>PSBD</strong> (Palmer Square Capital BDC) — 10% owner Martin Bicknell added <strong>$845k</strong> near $10.55.</li>
+<li><strong>CREX</strong> (Creative Realities). CEO Richard Mills bought <strong>$700k</strong> and CFO Tamra Koshewa <strong>$100k</strong> of the digital-signage micro-cap at $3.50. An $800k C-suite cluster in a company this small is real money to these people.</li>
+<li><strong>LIME</strong> (Neutron Holdings). <strong>Uber</strong> put <strong>$20M</strong> to work, 800k shares at $25, lifting its stake in the micromobility operator. A strategic corporate buyer averaging UP is a different animal than an insider buy, and the size demands notice.</li>
+<li><strong>BNR</strong> (Burning Rock Biotech). Director Yusheng Han disclosed <strong>$6.2M</strong> of open-market buying across the June 11 session in the China cancer-diagnostics name.</li>
+<li><strong>HDSN</strong> (Hudson Technologies). Hartree Partners, already a 10% owner, added <strong>$4.5M</strong> of the refrigerant reclaimer at ~$5.85.</li>
+<li><strong>BBD</strong> (Bank Bradesco). CLO Julio Cesar Bueno bought <strong>$2.0M</strong> of the Brazilian bank.</li>
+<li><strong>PSBD</strong> (Palmer Square Capital BDC). 10% owner Martin Bicknell added <strong>$845k</strong> near $10.55.</li>
+<li><strong>PSNY</strong> (Polestar). Three directors added a combined ~$78k. Small, but board buying is board buying.</li>
 </ul>
 <p><em>Data window 2026-07-02 to 2026-07-04. Not investment advice.</em></p>]]></content:encoded>
 </item>
