@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+<title>Smart Money Digest — Fund Spotlights</title>
+<link>https://kairosllm.github.io/smart-money/</link>
+<description>One famous fund's quarter, close up.</description>
+<language>en-us</language>
+<generator>Smart Money static feed builder</generator>
+<ttl>360</ttl>
+<managingEditor>noreply@kairosllm.dev (Kairos)</managingEditor>
+<image><url>https://kairosllm.github.io/smart-money/favicon-512.png</url><title>Smart Money Digest — Fund Spotlights</title><link>https://kairosllm.github.io/smart-money/</link></image>
+<atom:link href="https://kairosllm.github.io/smart-money/feed-spotlight.xml" rel="self" type="application/rss+xml"/>
+</channel>
+</rss>

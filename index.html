@@ -1,0 +1,1014 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#faf9f6"><link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAEQklEQVR42r2WW2zURRTG55yZ/21v3S4t6AoC5dJisBgaEU1tolY0EUKMlwfDg5pIQkxMlGi8PYi8+KSJMREfjVGMcjMaJCExNFSlgGhC05ZAAYHS0rJtd/d/35k5PpAYH7rbrrHO42Qy35w5v2/mg9y9rWw+B7J5HvUJIABHmC8BAObHasqrwHwIIEAQ6862BS8/tlwS/ccCiCA4+KF8oDW3Y9PyqKKBMY6AMHsxYpZrYQwA3EBqIkBQmkq+TFg8jHVYUabApC1I16oIamAKjGlifqy61izY1rWkoyWbTRicgxfKSbfyy7nCgZOjfeenEiZHYNU0uHNHU40KpNbvP7vm4xfbm9LmniMXi6FsTBrv7B0sB3J797JtXUsyjtEzcBOro1W1BxyhHMidW1bu3Lqq/2qpe/fPH349ODTiRhV9oOfqt7+OeJH0Qrlzy8rnHlxcDmQ1fLE6M6o1n3rhoaVRrH7qn7g87jtNjmUgR0CLd7cvbM5YXqSCWG1Y0Uj1NhmAhRXd0ZJtTBpRRS/OOZooiDQjRsSEwKGR8q15AHZs4GYN81WliIjSjuAA00Hl4bXNr21euefHYU0klY6lPnJmbPMHJza1N5+9Ujr8+42ULZSmOijiCEW/8vg9i758paPoS0NA0hIXxjwAlrTE/hMjwze840OFwYtFZmJzxqq2ey1MiRgi++6NjR0t2YlShACOiYwxpVnaEZrIDdXxgZu79p0bHvMSFq9mhqqYcoQgVqeHpzvX5JYvTAKCVKQ0aWLlUAaxQoR1yxoevXvh0bPjhXJscKS6BDRjjslHJsP9fde9SDkGmgINAQKxIWkkLB5JXfLlkiYnmzQOnRy1DF6fAALzQpVxBEf8vu/6wdNjn/dcSdlGPme//kV/VNFt+TQiVBTlUuahU6N+pGa0QlUf+JHquqvp8Nv39+zq/HTHesfk45NhwY29UO49fu35T868982QbXKlyTF5DYqwGqMGxze3rlp7ZyZli5e6l3a2LQBJlgAEyCaNXNrcd+L6nxO+Y3Ivkm5dTgbGiDHBwTa5G8pIajdQjBH+Yy0xhsCUopQtTg1PjxVDg+OMHM0gQLceolB+1XstbRtpW1wa944NFFQog1gTsWm3MlWMnt6YX7es4fKE/9EPFwRWf9NmbDIRsw08eX5q0o03rGpclLVa8ynTMda3ZFsWJdxIvvtM26tPrPjt4vT2z/7ov1JO2qKaD2r+B8BKvlydTz11X767vfn2RjthckRwQ3nphr+vb+Rg36gbyhodnkXgb7v5sXIMLjW99eTqLetve2R3rx8ppSnjGJyD1vTvv0ylyTLQMTkAGy9GfqxipSOpM44BwLSm2rvPLnCrH4qIIwBAyha5pIEAmojNLVqIOaYPIuaYvHewUChFop7sBXPPpgAsiHUsdYMj5h6MxNzPQsQSJk9aXOk6glcdAoyxuV/9/5eu/wJ+rRZo+7PhVAAAAABJRU5ErkJggg=="><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="alternate" type="application/rss+xml" title="Smart Money Digest" href="feed.xml"><link rel="alternate" type="application/rss+xml" title="Smart Money — Daily Tape" href="feed-daily.xml"><link rel="alternate" type="application/rss+xml" title="Smart Money — Pattern Watch" href="feed-weekly.xml"><link rel="alternate" type="application/rss+xml" title="Smart Money — 13F Deep Dive" href="feed-quarterly.xml"><link rel="alternate" type="application/rss+xml" title="Smart Money — Fund Spotlights" href="feed-spotlight.xml"><title>Smart Money Digest</title><style>
+/* Smart Money Digest reader. Light by default; dark via [data-theme="dark"].
+   Same design system as the Alpha Funnel reader, distinct palette (ledger green). */
+:root{
+  --bg:#faf9f6; --card:#ffffff; --ink:#1a1c1a; --muted:#6d6f6a; --faint:#747670;
+  --line:#e5e4dc; --line2:#edece5; --accent:#1c7a4f; --accent-soft:#e7f3ec;
+  --on-accent:#ffffff;
+  --zoom:#9a6b00; --zoom-bg:#fbf2dc; --chip:#f0efe8; --chip-ink:#484a45;
+  --maxw:720px;
+  --serif:"Iowan Old Style",Georgia,"Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+:root[data-theme="dark"]{
+  --bg:#0e1311; --card:#151c18; --ink:#e7ece9; --muted:#9aaaa2; --faint:#84948c;
+  --line:#243330; --line2:#1e2a26; --accent:#4fc38a; --accent-soft:#12291e;
+  --on-accent:#0e1311;
+  --zoom:#ffd479; --zoom-bg:#2a2414; --chip:#1b2620; --chip-ink:#a8b8ae;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);
+  font:17px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+/* visible keyboard focus for all interactive elements */
+a:focus-visible,button:focus-visible,.chip:focus-visible,
+.scard:focus-visible,.row:focus-visible,.featured:focus-visible{
+  outline:2px solid var(--accent);outline-offset:2px;border-radius:8px}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+  .scard:hover{transform:none}
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px 140px}
+.muted{color:var(--muted)}
+.empty{color:var(--muted);font-size:15px;line-height:1.7}
+
+/* top bar */
+.topbar{display:flex;align-items:center;gap:10px;padding:22px 0 16px;flex-wrap:wrap;
+  position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+a.brand{font-weight:700;letter-spacing:.2px;color:var(--ink);cursor:pointer}
+a.brand:hover{text-decoration:none;opacity:.62}
+.chan-nav{display:flex;align-items:center;gap:2px}
+.chan-nav .sep{color:var(--faint);font-weight:400;pointer-events:none;margin:0 1px}
+.chan-nav .chan{font-size:14.5px;color:var(--muted);padding:2px 9px;border-radius:7px;cursor:pointer;white-space:nowrap}
+.chan-nav .chan:hover{color:var(--ink);text-decoration:none;background:var(--chip)}
+.chan-nav .chan.active{color:var(--ink);font-weight:600}
+.back{display:inline-block;font-size:15px;color:var(--muted);margin:2px 0 4px}
+.back:hover{color:var(--ink);text-decoration:none}
+.spacer{flex:1}
+.theme-toggle{border:1px solid var(--line);background:var(--card);color:var(--muted);
+  width:34px;height:34px;border-radius:9px;cursor:pointer;font-size:15px;line-height:1;padding:0}
+.theme-toggle:hover{color:var(--ink);border-color:var(--faint)}
+.t-ico::before{content:"☾"}
+:root[data-theme="dark"] .t-ico::before{content:"☀"}
+.topbar.minimal{border-bottom:none}
+
+/* tier blurb (one line under the topbar on list views) */
+.tier-blurb{font-size:14.5px;color:var(--muted);margin:14px 0 10px}
+
+/* splash / home — one long full-width card per tier stacked vertically.
+   Card: tier name + date on the left, full headline on the right. */
+.wrap.splash{min-height:100dvh;display:flex;flex-direction:column;padding-bottom:22px;overflow:visible}
+.splash-main{flex:1;min-height:0;display:flex;align-items:flex-start;justify-content:center;padding:4px 0}
+.splash-inner{width:100%}
+.splash-cards{display:grid;grid-template-columns:1fr;gap:10px}
+.scard{display:flex;align-items:center;gap:26px;padding:20px 28px;
+  border:1px solid var(--line);border-radius:16px;overflow:hidden;
+  background:var(--card);color:var(--ink);
+  transition:border-color .15s ease,transform .15s ease,box-shadow .15s ease}
+.scard:hover{border-color:var(--faint);transform:translateY(-2px);text-decoration:none;
+  box-shadow:0 12px 30px rgba(14,20,16,.09)}
+:root[data-theme="dark"] .scard:hover{box-shadow:0 12px 30px rgba(0,0,0,.4)}
+.scard .s-meta{flex:0 0 190px;display:flex;flex-direction:column;gap:3px}
+.scard .s-name{font-weight:700;font-size:21px;letter-spacing:.2px}
+.scard .s-date{color:var(--muted);font-size:13.5px;font-weight:500}
+/* reserve lines so every card is the same height regardless of headline length */
+.scard .s-head{flex:1;font:400 22px/1.35 var(--serif);color:var(--ink);min-height:2.7em}
+.scard-empty{opacity:.55;cursor:default}
+.scard .s-blurb{font:400 16px/1.5 var(--sans);color:var(--muted)}
+.scard-wrap{display:flex;flex-direction:column}
+.splash-foot{display:flex;justify-content:flex-end;margin-top:12px}
+.whatis{border:1px solid var(--line);background:var(--card);color:var(--muted);
+  font:500 13px var(--sans);padding:7px 13px;border-radius:9px;cursor:pointer}
+.whatis:hover{color:var(--ink);border-color:var(--faint)}
+@media(max-width:640px){
+  .wrap.splash{height:auto;min-height:100dvh;overflow:visible}
+  .splash-main{padding:16px 0}
+  .scard{flex-direction:column;align-items:flex-start;gap:10px;padding:16px 18px}
+  .scard .s-meta{flex:none}
+  .scard .s-head{font-size:19px;min-height:0}
+}
+
+/* filters */
+.filters{border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  padding:16px 0 18px;margin-bottom:34px}
+.filter-group{display:flex;align-items:baseline;gap:12px;margin:8px 0}
+.filter-label{flex:0 0 58px;font-size:12px;text-transform:uppercase;letter-spacing:.7px;
+  color:var(--faint);padding-top:5px}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{font:inherit;font-size:13px;padding:4px 11px;border-radius:999px;cursor:pointer;
+  border:1px solid var(--line);background:var(--chip);color:var(--chip-ink);white-space:nowrap}
+.chip:hover{border-color:var(--faint);color:var(--ink)}
+.chip.active{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.chip.active .ct{color:color-mix(in srgb,var(--on-accent) 72%,transparent)}
+.chip .ct{color:var(--faint)}
+.chip.more{background:transparent;border-style:dashed;color:var(--muted)}
+.filter-note{margin-top:14px;font-size:14px;color:var(--muted)}
+.filter-note strong{color:var(--ink)}
+.clear{font:inherit;font-size:13px;margin-left:8px;border:none;background:none;color:var(--accent);cursor:pointer}
+.clear:hover{text-decoration:underline}
+
+/* featured (latest) */
+.featured{display:block;color:inherit;padding:4px 0 30px;margin-bottom:28px;
+  border-bottom:1px solid var(--line)}
+.featured:hover{text-decoration:none}
+.kicker{font-size:12.5px;text-transform:uppercase;letter-spacing:.8px;color:var(--faint);margin-bottom:12px}
+.f-title{font:600 33px/1.18 var(--serif);margin:0 0 14px;letter-spacing:-.01em}
+.featured:hover .f-title{color:var(--accent)}
+.f-sub{font-size:18px;line-height:1.55;color:var(--muted);margin:0 0 16px;max-width:62ch}
+.f-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.tg{font-size:12px;color:var(--faint);border:1px solid var(--line);border-radius:6px;padding:2px 8px;
+  font-variant-numeric:tabular-nums}
+a.tg:hover{color:var(--ink);border-color:var(--faint);text-decoration:none}
+.keepreading{font-size:15px;color:var(--accent);font-weight:500}
+
+/* the dated list */
+.list{display:flex;flex-direction:column}
+.row{display:flex;gap:18px;align-items:baseline;color:inherit;padding:13px 0;
+  border-bottom:1px solid var(--line2)}
+.row:hover{text-decoration:none}
+.r-date{flex:0 0 92px;font-size:13.5px;color:var(--faint);font-variant-numeric:tabular-nums}
+.r-title{font:500 18px/1.4 var(--serif)}
+.row:hover .r-title{color:var(--accent)}
+
+/* reading view */
+.read .topbar{margin-bottom:6px}
+.article{padding-top:8px}
+.a-title{font:600 32px/1.2 var(--serif);margin:6px 0 14px;letter-spacing:-.01em}
+.a-sub{font-size:18px;line-height:1.55;color:var(--muted);margin:0 0 16px;max-width:62ch}
+.a-tags{display:flex;flex-wrap:wrap;gap:6px}
+.article hr{border:none;border-top:1px solid var(--line);margin:22px 0 6px}
+
+/* "In this piece" jump list */
+.toc{border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:2px 0 26px;background:var(--card)}
+.toc-h{font-size:12px;text-transform:uppercase;letter-spacing:.7px;color:var(--faint);margin-bottom:8px}
+.toc ul{margin:0;padding-left:18px}
+.toc li{margin:5px 0}
+.toc a{color:var(--muted);font-size:15px}
+.toc a:hover{color:var(--ink)}
+
+/* rendered markdown body */
+.body{font-size:17px;max-width:68ch}
+.body h2{font:600 21px/1.3 var(--serif);margin:34px 0 12px;padding-top:18px;border-top:1px solid var(--line);
+  scroll-margin-top:76px}   /* clear the sticky topbar when jumping to a section */
+.body h3{font:600 17px/1.35 var(--sans);margin:22px 0 8px;color:var(--ink)}
+.body p{margin:14px 0}
+.body ul{padding-left:22px}.body li{margin:7px 0}
+.body strong{color:var(--ink);font-weight:680}
+.body em{color:var(--muted)}
+.body hr{border:none;border-top:1px solid var(--line);margin:26px 0}
+.body blockquote{border-left:3px solid var(--line);margin:14px 0;padding:2px 16px;color:var(--muted)}
+.body code{background:var(--chip);padding:1px 6px;border-radius:5px;font-size:.9em}
+
+/* links inside the body */
+.xlink{color:var(--accent);border-bottom:1px dashed var(--accent)}
+a.cite-sec{color:var(--zoom);text-decoration:underline;
+  text-decoration-color:color-mix(in srgb,var(--zoom) 45%,transparent);text-underline-offset:2px}
+a.cite-sec::after{content:"§";font-size:.72em;vertical-align:super;margin-left:2px;opacity:.85}
+a.cite-plain{color:var(--accent);text-decoration:underline;
+  text-decoration-color:color-mix(in srgb,var(--accent) 45%,transparent);text-underline-offset:2px}
+/* bold tickers in the body — scannable, distinct from links (no underline) */
+.cashtag{font-weight:650;color:var(--ink);font-variant-numeric:tabular-nums;
+  background:var(--chip);border-radius:4px;padding:0 3px}
+.cashtag.clickable{cursor:pointer}
+.cashtag.clickable:hover{color:var(--accent)}
+.cashtag.clickable:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* drawer (search / subscribe / what-is-this / shortcuts) */
+.drawer{position:fixed;top:0;right:0;height:100dvh;width:min(560px,94vw);z-index:40;
+  background:var(--card);border-left:1px solid var(--line);transform:translateX(100%);
+  transition:transform .22s ease;display:flex;flex-direction:column;box-shadow:-24px 0 60px rgba(0,0,0,.16)}
+:root[data-theme="dark"] .drawer{box-shadow:-24px 0 60px rgba(0,0,0,.5)}
+.drawer.open{transform:translateX(0)}
+.drawer-head{display:flex;align-items:center;gap:12px;padding:14px 18px;border-bottom:1px solid var(--line)}
+.drawer-tag{font-size:11px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;
+  color:var(--on-accent);background:var(--accent);padding:3px 9px;border-radius:6px}
+.drawer-source{font-size:13px;color:var(--muted)}
+.drawer-close{margin-left:auto;background:none;border:none;color:var(--muted);font-size:18px;cursor:pointer}
+.drawer-close:hover{color:var(--ink)}
+.drawer-body{overflow:auto;padding:20px 24px 70px;flex:1;font-size:16px}
+.drawer-body h1{font:600 21px/1.3 var(--serif)}
+.drawer-body h2{font:600 17px/1.35 var(--serif);margin:20px 0 8px}
+.drawer-body h3{font-size:15px}
+.drawer-body code{background:var(--chip);padding:2px 6px;border-radius:5px;color:var(--zoom);
+  user-select:all;display:inline-block;margin-top:6px}
+.scrim{position:fixed;inset:0;background:rgba(14,20,16,.32);z-index:35}
+:root[data-theme="dark"] .scrim{background:rgba(0,0,0,.5)}
+
+/* a11y, search, shortcuts, markers, progress, share */
+.skip{position:fixed;top:-48px;left:10px;z-index:70;background:var(--accent);color:var(--on-accent);
+  padding:8px 14px;border-radius:8px;font:600 14px var(--sans);transition:top .15s ease}
+.skip:focus{top:10px;text-decoration:none}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+#main:focus{outline:none}
+/* reading-progress bar */
+#readbar{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:60;transition:width .12s linear}
+/* "new since last visit" dots */
+.ndot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent);vertical-align:middle}
+.chan .ndot{width:6px;height:6px;margin-left:5px}
+/* topbar icon button (search) matches the theme toggle */
+.icon-btn{border:1px solid var(--line);background:var(--card);color:var(--muted);
+  width:34px;height:34px;border-radius:9px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;padding:0}
+.icon-btn:hover{color:var(--ink);border-color:var(--faint)}
+/* search drawer */
+.search-input{width:100%;font:400 16px var(--sans);padding:10px 12px;border:1px solid var(--line);
+  border-radius:10px;background:var(--bg);color:var(--ink)}
+.search-input:focus{outline:none;border-color:var(--accent)}
+.search-results{margin-top:12px;display:flex;flex-direction:column}
+.sr-row{display:flex;flex-direction:column;gap:2px;padding:10px 2px;border-bottom:1px solid var(--line2);color:inherit}
+.sr-row:hover{text-decoration:none}
+.sr-row:hover .sr-title{color:var(--accent)}
+.sr-meta{font-size:12px;color:var(--muted)}
+.sr-title{font:500 15px/1.35 var(--serif)}
+/* shortcuts help */
+.kbd-list{display:grid;grid-template-columns:auto 1fr;gap:10px 16px;align-items:baseline;margin:6px 0}
+.kbd-list dt{margin:0}.kbd-list dd{margin:0;color:var(--muted);font-size:14px}
+kbd{font:600 12px var(--sans);background:var(--chip);color:var(--ink);border:1px solid var(--line);
+  border-bottom-width:2px;border-radius:6px;padding:2px 7px;white-space:nowrap}
+.wi-tip{font-size:13px;color:var(--muted)}
+/* share button in the reading-view kicker */
+.article .kicker{display:flex;align-items:center;gap:10px}
+.share-btn{margin-left:auto;border:1px solid var(--line);background:var(--card);color:var(--muted);
+  font:600 12px var(--sans);letter-spacing:normal;text-transform:none;padding:5px 12px;border-radius:8px;cursor:pointer}
+.share-btn:hover{color:var(--ink);border-color:var(--faint)}
+/* scroll-spy active TOC entry */
+.toc a.active{color:var(--ink);font-weight:600}
+
+/* print: strip the chrome, keep the article, surface citation URLs on paper */
+@media print{
+  .topbar,.chan-nav,.filters,.edition-nav,.toc,.sub-btn,.icon-btn,.theme-toggle,
+  .back,.drawer,.scrim,.skip,#readbar,.share-btn,.splash-foot,.tier-blurb{display:none!important}
+  html,body{background:#fff;color:#000}
+  .wrap{max-width:none;padding:0}
+  a{color:#000}
+  .body a[href^="http"]::after{content:" (" attr(href) ")";font-size:.82em;color:#444}
+  .cashtag{background:none;padding:0}
+  .body h2,.a-title{break-after:avoid}
+}
+
+/* subscribe button (topbar) */
+.sub-btn{border:1px solid var(--line);background:var(--card);color:var(--muted);
+  font:600 12.5px var(--sans);padding:6px 12px;border-radius:9px;cursor:pointer;white-space:nowrap}
+.sub-btn:hover{color:var(--ink);border-color:var(--faint)}
+
+/* subscribe drawer contents */
+.sub-list{display:flex;flex-direction:column;gap:8px;margin:16px 0 6px}
+.sub-row{display:flex;align-items:center;gap:12px;border:1px solid var(--line);
+  border-radius:10px;padding:10px 12px}
+.sub-row-main{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
+.sub-name{font-weight:600;font-size:14px}
+.sub-url{font-size:12px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sub-copy{flex:0 0 auto;border:1px solid var(--line);background:var(--chip);color:var(--ink);
+  font:600 12px var(--sans);padding:5px 12px;border-radius:8px;cursor:pointer}
+.sub-copy:hover{border-color:var(--faint)}
+.sub-copy.done{color:var(--accent);border-color:var(--accent)}
+.sub-hint{font-size:13px;color:var(--muted);margin-top:12px}
+
+/* prev/next piece nav (reading view) */
+.edition-nav{display:flex;justify-content:space-between;gap:16px;margin:36px 0 0;
+  padding-top:18px;border-top:1px solid var(--line)}
+.edition-nav a{font-size:14px;color:var(--muted)}
+.edition-nav a:hover{color:var(--ink);text-decoration:none}
+.edition-nav .ed-next{margin-left:auto;text-align:right}
+
+@media (max-width:560px){
+  .f-title{font-size:27px}.a-title{font-size:26px}
+  .r-date{flex-basis:78px}
+  .filter-group{flex-direction:column;gap:6px}
+}
+
+</style><script>
+/**
+ * marked v12.0.0 - a markdown parser
+ * Copyright (c) 2011-2024, Christopher Jeffrey. (MIT Licensed)
+ * https://github.com/markedjs/marked
+ */
+!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?t(exports):"function"==typeof define&&define.amd?define(["exports"],t):t((e="undefined"!=typeof globalThis?globalThis:e||self).marked={})}(this,(function(e){"use strict";function t(){return{async:!1,breaks:!1,extensions:null,gfm:!0,hooks:null,pedantic:!1,renderer:null,silent:!1,tokenizer:null,walkTokens:null}}function n(t){e.defaults=t}e.defaults={async:!1,breaks:!1,extensions:null,gfm:!0,hooks:null,pedantic:!1,renderer:null,silent:!1,tokenizer:null,walkTokens:null};const s=/[&<>"']/,r=new RegExp(s.source,"g"),i=/[<>"']|&(?!(#\d{1,7}|#[Xx][a-fA-F0-9]{1,6}|\w+);)/,l=new RegExp(i.source,"g"),o={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"},a=e=>o[e];function c(e,t){if(t){if(s.test(e))return e.replace(r,a)}else if(i.test(e))return e.replace(l,a);return e}const h=/&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/gi;function p(e){return e.replace(h,((e,t)=>"colon"===(t=t.toLowerCase())?":":"#"===t.charAt(0)?"x"===t.charAt(1)?String.fromCharCode(parseInt(t.substring(2),16)):String.fromCharCode(+t.substring(1)):""))}const u=/(^|[^\[])\^/g;function k(e,t){let n="string"==typeof e?e:e.source;t=t||"";const s={replace:(e,t)=>{let r="string"==typeof t?t:t.source;return r=r.replace(u,"$1"),n=n.replace(e,r),s},getRegex:()=>new RegExp(n,t)};return s}function g(e){try{e=encodeURI(e).replace(/%25/g,"%")}catch(e){return null}return e}const f={exec:()=>null};function d(e,t){const n=e.replace(/\|/g,((e,t,n)=>{let s=!1,r=t;for(;--r>=0&&"\\"===n[r];)s=!s;return s?"|":" |"})).split(/ \|/);let s=0;if(n[0].trim()||n.shift(),n.length>0&&!n[n.length-1].trim()&&n.pop(),t)if(n.length>t)n.splice(t);else for(;n.length<t;)n.push("");for(;s<n.length;s++)n[s]=n[s].trim().replace(/\\\|/g,"|");return n}function x(e,t,n){const s=e.length;if(0===s)return"";let r=0;for(;r<s;){const i=e.charAt(s-r-1);if(i!==t||n){if(i===t||!n)break;r++}else r++}return e.slice(0,s-r)}function b(e,t,n,s){const r=t.href,i=t.title?c(t.title):null,l=e[1].replace(/\\([\[\]])/g,"$1");if("!"!==e[0].charAt(0)){s.state.inLink=!0;const e={type:"link",raw:n,href:r,title:i,text:l,tokens:s.inlineTokens(l)};return s.state.inLink=!1,e}return{type:"image",raw:n,href:r,title:i,text:c(l)}}class w{options;rules;lexer;constructor(t){this.options=t||e.defaults}space(e){const t=this.rules.block.newline.exec(e);if(t&&t[0].length>0)return{type:"space",raw:t[0]}}code(e){const t=this.rules.block.code.exec(e);if(t){const e=t[0].replace(/^ {1,4}/gm,"");return{type:"code",raw:t[0],codeBlockStyle:"indented",text:this.options.pedantic?e:x(e,"\n")}}}fences(e){const t=this.rules.block.fences.exec(e);if(t){const e=t[0],n=function(e,t){const n=e.match(/^(\s+)(?:```)/);if(null===n)return t;const s=n[1];return t.split("\n").map((e=>{const t=e.match(/^\s+/);if(null===t)return e;const[n]=t;return n.length>=s.length?e.slice(s.length):e})).join("\n")}(e,t[3]||"");return{type:"code",raw:e,lang:t[2]?t[2].trim().replace(this.rules.inline.anyPunctuation,"$1"):t[2],text:n}}}heading(e){const t=this.rules.block.heading.exec(e);if(t){let e=t[2].trim();if(/#$/.test(e)){const t=x(e,"#");this.options.pedantic?e=t.trim():t&&!/ $/.test(t)||(e=t.trim())}return{type:"heading",raw:t[0],depth:t[1].length,text:e,tokens:this.lexer.inline(e)}}}hr(e){const t=this.rules.block.hr.exec(e);if(t)return{type:"hr",raw:t[0]}}blockquote(e){const t=this.rules.block.blockquote.exec(e);if(t){const e=x(t[0].replace(/^ *>[ \t]?/gm,""),"\n"),n=this.lexer.state.top;this.lexer.state.top=!0;const s=this.lexer.blockTokens(e);return this.lexer.state.top=n,{type:"blockquote",raw:t[0],tokens:s,text:e}}}list(e){let t=this.rules.block.list.exec(e);if(t){let n=t[1].trim();const s=n.length>1,r={type:"list",raw:"",ordered:s,start:s?+n.slice(0,-1):"",loose:!1,items:[]};n=s?`\\d{1,9}\\${n.slice(-1)}`:`\\${n}`,this.options.pedantic&&(n=s?n:"[*+-]");const i=new RegExp(`^( {0,3}${n})((?:[\t ][^\\n]*)?(?:\\n|$))`);let l="",o="",a=!1;for(;e;){let n=!1;if(!(t=i.exec(e)))break;if(this.rules.block.hr.test(e))break;l=t[0],e=e.substring(l.length);let s=t[2].split("\n",1)[0].replace(/^\t+/,(e=>" ".repeat(3*e.length))),c=e.split("\n",1)[0],h=0;this.options.pedantic?(h=2,o=s.trimStart()):(h=t[2].search(/[^ ]/),h=h>4?1:h,o=s.slice(h),h+=t[1].length);let p=!1;if(!s&&/^ *$/.test(c)&&(l+=c+"\n",e=e.substring(c.length+1),n=!0),!n){const t=new RegExp(`^ {0,${Math.min(3,h-1)}}(?:[*+-]|\\d{1,9}[.)])((?:[ \t][^\\n]*)?(?:\\n|$))`),n=new RegExp(`^ {0,${Math.min(3,h-1)}}((?:- *){3,}|(?:_ *){3,}|(?:\\* *){3,})(?:\\n+|$)`),r=new RegExp(`^ {0,${Math.min(3,h-1)}}(?:\`\`\`|~~~)`),i=new RegExp(`^ {0,${Math.min(3,h-1)}}#`);for(;e;){const a=e.split("\n",1)[0];if(c=a,this.options.pedantic&&(c=c.replace(/^ {1,4}(?=( {4})*[^ ])/g,"  ")),r.test(c))break;if(i.test(c))break;if(t.test(c))break;if(n.test(e))break;if(c.search(/[^ ]/)>=h||!c.trim())o+="\n"+c.slice(h);else{if(p)break;if(s.search(/[^ ]/)>=4)break;if(r.test(s))break;if(i.test(s))break;if(n.test(s))break;o+="\n"+c}p||c.trim()||(p=!0),l+=a+"\n",e=e.substring(a.length+1),s=c.slice(h)}}r.loose||(a?r.loose=!0:/\n *\n *$/.test(l)&&(a=!0));let u,k=null;this.options.gfm&&(k=/^\[[ xX]\] /.exec(o),k&&(u="[ ] "!==k[0],o=o.replace(/^\[[ xX]\] +/,""))),r.items.push({type:"list_item",raw:l,task:!!k,checked:u,loose:!1,text:o,tokens:[]}),r.raw+=l}r.items[r.items.length-1].raw=l.trimEnd(),r.items[r.items.length-1].text=o.trimEnd(),r.raw=r.raw.trimEnd();for(let e=0;e<r.items.length;e++)if(this.lexer.state.top=!1,r.items[e].tokens=this.lexer.blockTokens(r.items[e].text,[]),!r.loose){const t=r.items[e].tokens.filter((e=>"space"===e.type)),n=t.length>0&&t.some((e=>/\n.*\n/.test(e.raw)));r.loose=n}if(r.loose)for(let e=0;e<r.items.length;e++)r.items[e].loose=!0;return r}}html(e){const t=this.rules.block.html.exec(e);if(t){return{type:"html",block:!0,raw:t[0],pre:"pre"===t[1]||"script"===t[1]||"style"===t[1],text:t[0]}}}def(e){const t=this.rules.block.def.exec(e);if(t){const e=t[1].toLowerCase().replace(/\s+/g," "),n=t[2]?t[2].replace(/^<(.*)>$/,"$1").replace(this.rules.inline.anyPunctuation,"$1"):"",s=t[3]?t[3].substring(1,t[3].length-1).replace(this.rules.inline.anyPunctuation,"$1"):t[3];return{type:"def",tag:e,raw:t[0],href:n,title:s}}}table(e){const t=this.rules.block.table.exec(e);if(!t)return;if(!/[:|]/.test(t[2]))return;const n=d(t[1]),s=t[2].replace(/^\||\| *$/g,"").split("|"),r=t[3]&&t[3].trim()?t[3].replace(/\n[ \t]*$/,"").split("\n"):[],i={type:"table",raw:t[0],header:[],align:[],rows:[]};if(n.length===s.length){for(const e of s)/^ *-+: *$/.test(e)?i.align.push("right"):/^ *:-+: *$/.test(e)?i.align.push("center"):/^ *:-+ *$/.test(e)?i.align.push("left"):i.align.push(null);for(const e of n)i.header.push({text:e,tokens:this.lexer.inline(e)});for(const e of r)i.rows.push(d(e,i.header.length).map((e=>({text:e,tokens:this.lexer.inline(e)}))));return i}}lheading(e){const t=this.rules.block.lheading.exec(e);if(t)return{type:"heading",raw:t[0],depth:"="===t[2].charAt(0)?1:2,text:t[1],tokens:this.lexer.inline(t[1])}}paragraph(e){const t=this.rules.block.paragraph.exec(e);if(t){const e="\n"===t[1].charAt(t[1].length-1)?t[1].slice(0,-1):t[1];return{type:"paragraph",raw:t[0],text:e,tokens:this.lexer.inline(e)}}}text(e){const t=this.rules.block.text.exec(e);if(t)return{type:"text",raw:t[0],text:t[0],tokens:this.lexer.inline(t[0])}}escape(e){const t=this.rules.inline.escape.exec(e);if(t)return{type:"escape",raw:t[0],text:c(t[1])}}tag(e){const t=this.rules.inline.tag.exec(e);if(t)return!this.lexer.state.inLink&&/^<a /i.test(t[0])?this.lexer.state.inLink=!0:this.lexer.state.inLink&&/^<\/a>/i.test(t[0])&&(this.lexer.state.inLink=!1),!this.lexer.state.inRawBlock&&/^<(pre|code|kbd|script)(\s|>)/i.test(t[0])?this.lexer.state.inRawBlock=!0:this.lexer.state.inRawBlock&&/^<\/(pre|code|kbd|script)(\s|>)/i.test(t[0])&&(this.lexer.state.inRawBlock=!1),{type:"html",raw:t[0],inLink:this.lexer.state.inLink,inRawBlock:this.lexer.state.inRawBlock,block:!1,text:t[0]}}link(e){const t=this.rules.inline.link.exec(e);if(t){const e=t[2].trim();if(!this.options.pedantic&&/^</.test(e)){if(!/>$/.test(e))return;const t=x(e.slice(0,-1),"\\");if((e.length-t.length)%2==0)return}else{const e=function(e,t){if(-1===e.indexOf(t[1]))return-1;let n=0;for(let s=0;s<e.length;s++)if("\\"===e[s])s++;else if(e[s]===t[0])n++;else if(e[s]===t[1]&&(n--,n<0))return s;return-1}(t[2],"()");if(e>-1){const n=(0===t[0].indexOf("!")?5:4)+t[1].length+e;t[2]=t[2].substring(0,e),t[0]=t[0].substring(0,n).trim(),t[3]=""}}let n=t[2],s="";if(this.options.pedantic){const e=/^([^'"]*[^\s])\s+(['"])(.*)\2/.exec(n);e&&(n=e[1],s=e[3])}else s=t[3]?t[3].slice(1,-1):"";return n=n.trim(),/^</.test(n)&&(n=this.options.pedantic&&!/>$/.test(e)?n.slice(1):n.slice(1,-1)),b(t,{href:n?n.replace(this.rules.inline.anyPunctuation,"$1"):n,title:s?s.replace(this.rules.inline.anyPunctuation,"$1"):s},t[0],this.lexer)}}reflink(e,t){let n;if((n=this.rules.inline.reflink.exec(e))||(n=this.rules.inline.nolink.exec(e))){const e=t[(n[2]||n[1]).replace(/\s+/g," ").toLowerCase()];if(!e){const e=n[0].charAt(0);return{type:"text",raw:e,text:e}}return b(n,e,n[0],this.lexer)}}emStrong(e,t,n=""){let s=this.rules.inline.emStrongLDelim.exec(e);if(!s)return;if(s[3]&&n.match(/[\p{L}\p{N}]/u))return;if(!(s[1]||s[2]||"")||!n||this.rules.inline.punctuation.exec(n)){const n=[...s[0]].length-1;let r,i,l=n,o=0;const a="*"===s[0][0]?this.rules.inline.emStrongRDelimAst:this.rules.inline.emStrongRDelimUnd;for(a.lastIndex=0,t=t.slice(-1*e.length+n);null!=(s=a.exec(t));){if(r=s[1]||s[2]||s[3]||s[4]||s[5]||s[6],!r)continue;if(i=[...r].length,s[3]||s[4]){l+=i;continue}if((s[5]||s[6])&&n%3&&!((n+i)%3)){o+=i;continue}if(l-=i,l>0)continue;i=Math.min(i,i+l+o);const t=[...s[0]][0].length,a=e.slice(0,n+s.index+t+i);if(Math.min(n,i)%2){const e=a.slice(1,-1);return{type:"em",raw:a,text:e,tokens:this.lexer.inlineTokens(e)}}const c=a.slice(2,-2);return{type:"strong",raw:a,text:c,tokens:this.lexer.inlineTokens(c)}}}}codespan(e){const t=this.rules.inline.code.exec(e);if(t){let e=t[2].replace(/\n/g," ");const n=/[^ ]/.test(e),s=/^ /.test(e)&&/ $/.test(e);return n&&s&&(e=e.substring(1,e.length-1)),e=c(e,!0),{type:"codespan",raw:t[0],text:e}}}br(e){const t=this.rules.inline.br.exec(e);if(t)return{type:"br",raw:t[0]}}del(e){const t=this.rules.inline.del.exec(e);if(t)return{type:"del",raw:t[0],text:t[2],tokens:this.lexer.inlineTokens(t[2])}}autolink(e){const t=this.rules.inline.autolink.exec(e);if(t){let e,n;return"@"===t[2]?(e=c(t[1]),n="mailto:"+e):(e=c(t[1]),n=e),{type:"link",raw:t[0],text:e,href:n,tokens:[{type:"text",raw:e,text:e}]}}}url(e){let t;if(t=this.rules.inline.url.exec(e)){let e,n;if("@"===t[2])e=c(t[0]),n="mailto:"+e;else{let s;do{s=t[0],t[0]=this.rules.inline._backpedal.exec(t[0])?.[0]??""}while(s!==t[0]);e=c(t[0]),n="www."===t[1]?"http://"+t[0]:t[0]}return{type:"link",raw:t[0],text:e,href:n,tokens:[{type:"text",raw:e,text:e}]}}}inlineText(e){const t=this.rules.inline.text.exec(e);if(t){let e;return e=this.lexer.state.inRawBlock?t[0]:c(t[0]),{type:"text",raw:t[0],text:e}}}}const m=/^ {0,3}((?:-[\t ]*){3,}|(?:_[ \t]*){3,}|(?:\*[ \t]*){3,})(?:\n+|$)/,y=/(?:[*+-]|\d{1,9}[.)])/,$=k(/^(?!bull )((?:.|\n(?!\s*?\n|bull ))+?)\n {0,3}(=+|-+) *(?:\n+|$)/).replace(/bull/g,y).getRegex(),z=/^([^\n]+(?:\n(?!hr|heading|lheading|blockquote|fences|list|html|table| +\n)[^\n]+)*)/,T=/(?!\s*\])(?:\\.|[^\[\]\\])+/,R=k(/^ {0,3}\[(label)\]: *(?:\n *)?([^<\s][^\s]*|<.*?>)(?:(?: +(?:\n *)?| *\n *)(title))? *(?:\n+|$)/).replace("label",T).replace("title",/(?:"(?:\\"?|[^"\\])*"|'[^'\n]*(?:\n[^'\n]+)*\n?'|\([^()]*\))/).getRegex(),_=k(/^( {0,3}bull)([ \t][^\n]+?)?(?:\n|$)/).replace(/bull/g,y).getRegex(),A="address|article|aside|base|basefont|blockquote|body|caption|center|col|colgroup|dd|details|dialog|dir|div|dl|dt|fieldset|figcaption|figure|footer|form|frame|frameset|h[1-6]|head|header|hr|html|iframe|legend|li|link|main|menu|menuitem|meta|nav|noframes|ol|optgroup|option|p|param|search|section|summary|table|tbody|td|tfoot|th|thead|title|tr|track|ul",S=/<!--(?:-?>|[\s\S]*?(?:-->|$))/,I=k("^ {0,3}(?:<(script|pre|style|textarea)[\\s>][\\s\\S]*?(?:</\\1>[^\\n]*\\n+|$)|comment[^\\n]*(\\n+|$)|<\\?[\\s\\S]*?(?:\\?>\\n*|$)|<![A-Z][\\s\\S]*?(?:>\\n*|$)|<!\\[CDATA\\[[\\s\\S]*?(?:\\]\\]>\\n*|$)|</?(tag)(?: +|\\n|/?>)[\\s\\S]*?(?:(?:\\n *)+\\n|$)|<(?!script|pre|style|textarea)([a-z][\\w-]*)(?:attribute)*? */?>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:(?:\\n *)+\\n|$)|</(?!script|pre|style|textarea)[a-z][\\w-]*\\s*>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:(?:\\n *)+\\n|$))","i").replace("comment",S).replace("tag",A).replace("attribute",/ +[a-zA-Z:_][\w.:-]*(?: *= *"[^"\n]*"| *= *'[^'\n]*'| *= *[^\s"'=<>`]+)?/).getRegex(),E=k(z).replace("hr",m).replace("heading"," {0,3}#{1,6}(?:\\s|$)").replace("|lheading","").replace("|table","").replace("blockquote"," {0,3}>").replace("fences"," {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n").replace("list"," {0,3}(?:[*+-]|1[.)]) ").replace("html","</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)").replace("tag",A).getRegex(),Z={blockquote:k(/^( {0,3}> ?(paragraph|[^\n]*)(?:\n|$))+/).replace("paragraph",E).getRegex(),code:/^( {4}[^\n]+(?:\n(?: *(?:\n|$))*)?)+/,def:R,fences:/^ {0,3}(`{3,}(?=[^`\n]*(?:\n|$))|~{3,})([^\n]*)(?:\n|$)(?:|([\s\S]*?)(?:\n|$))(?: {0,3}\1[~`]* *(?=\n|$)|$)/,heading:/^ {0,3}(#{1,6})(?=\s|$)(.*)(?:\n+|$)/,hr:m,html:I,lheading:$,list:_,newline:/^(?: *(?:\n|$))+/,paragraph:E,table:f,text:/^[^\n]+/},q=k("^ *([^\\n ].*)\\n {0,3}((?:\\| *)?:?-+:? *(?:\\| *:?-+:? *)*(?:\\| *)?)(?:\\n((?:(?! *\\n|hr|heading|blockquote|code|fences|list|html).*(?:\\n|$))*)\\n*|$)").replace("hr",m).replace("heading"," {0,3}#{1,6}(?:\\s|$)").replace("blockquote"," {0,3}>").replace("code"," {4}[^\\n]").replace("fences"," {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n").replace("list"," {0,3}(?:[*+-]|1[.)]) ").replace("html","</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)").replace("tag",A).getRegex(),L={...Z,table:q,paragraph:k(z).replace("hr",m).replace("heading"," {0,3}#{1,6}(?:\\s|$)").replace("|lheading","").replace("table",q).replace("blockquote"," {0,3}>").replace("fences"," {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n").replace("list"," {0,3}(?:[*+-]|1[.)]) ").replace("html","</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)").replace("tag",A).getRegex()},P={...Z,html:k("^ *(?:comment *(?:\\n|\\s*$)|<(tag)[\\s\\S]+?</\\1> *(?:\\n{2,}|\\s*$)|<tag(?:\"[^\"]*\"|'[^']*'|\\s[^'\"/>\\s]*)*?/?> *(?:\\n{2,}|\\s*$))").replace("comment",S).replace(/tag/g,"(?!(?:a|em|strong|small|s|cite|q|dfn|abbr|data|time|code|var|samp|kbd|sub|sup|i|b|u|mark|ruby|rt|rp|bdi|bdo|span|br|wbr|ins|del|img)\\b)\\w+(?!:|[^\\w\\s@]*@)\\b").getRegex(),def:/^ *\[([^\]]+)\]: *<?([^\s>]+)>?(?: +(["(][^\n]+[")]))? *(?:\n+|$)/,heading:/^(#{1,6})(.*)(?:\n+|$)/,fences:f,lheading:/^(.+?)\n {0,3}(=+|-+) *(?:\n+|$)/,paragraph:k(z).replace("hr",m).replace("heading"," *#{1,6} *[^\n]").replace("lheading",$).replace("|table","").replace("blockquote"," {0,3}>").replace("|fences","").replace("|list","").replace("|html","").replace("|tag","").getRegex()},Q=/^\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/,v=/^( {2,}|\\)\n(?!\s*$)/,B="\\p{P}\\p{S}",M=k(/^((?![*_])[\spunctuation])/,"u").replace(/punctuation/g,B).getRegex(),O=k(/^(?:\*+(?:((?!\*)[punct])|[^\s*]))|^_+(?:((?!_)[punct])|([^\s_]))/,"u").replace(/punct/g,B).getRegex(),C=k("^[^_*]*?__[^_*]*?\\*[^_*]*?(?=__)|[^*]+(?=[^*])|(?!\\*)[punct](\\*+)(?=[\\s]|$)|[^punct\\s](\\*+)(?!\\*)(?=[punct\\s]|$)|(?!\\*)[punct\\s](\\*+)(?=[^punct\\s])|[\\s](\\*+)(?!\\*)(?=[punct])|(?!\\*)[punct](\\*+)(?!\\*)(?=[punct])|[^punct\\s](\\*+)(?=[^punct\\s])","gu").replace(/punct/g,B).getRegex(),D=k("^[^_*]*?\\*\\*[^_*]*?_[^_*]*?(?=\\*\\*)|[^_]+(?=[^_])|(?!_)[punct](_+)(?=[\\s]|$)|[^punct\\s](_+)(?!_)(?=[punct\\s]|$)|(?!_)[punct\\s](_+)(?=[^punct\\s])|[\\s](_+)(?!_)(?=[punct])|(?!_)[punct](_+)(?!_)(?=[punct])","gu").replace(/punct/g,B).getRegex(),j=k(/\\([punct])/,"gu").replace(/punct/g,B).getRegex(),H=k(/^<(scheme:[^\s\x00-\x1f<>]*|email)>/).replace("scheme",/[a-zA-Z][a-zA-Z0-9+.-]{1,31}/).replace("email",/[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+(@)[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+(?![-_])/).getRegex(),U=k(S).replace("(?:--\x3e|$)","--\x3e").getRegex(),X=k("^comment|^</[a-zA-Z][\\w:-]*\\s*>|^<[a-zA-Z][\\w-]*(?:attribute)*?\\s*/?>|^<\\?[\\s\\S]*?\\?>|^<![a-zA-Z]+\\s[\\s\\S]*?>|^<!\\[CDATA\\[[\\s\\S]*?\\]\\]>").replace("comment",U).replace("attribute",/\s+[a-zA-Z:_][\w.:-]*(?:\s*=\s*"[^"]*"|\s*=\s*'[^']*'|\s*=\s*[^\s"'=<>`]+)?/).getRegex(),F=/(?:\[(?:\\.|[^\[\]\\])*\]|\\.|`[^`]*`|[^\[\]\\`])*?/,N=k(/^!?\[(label)\]\(\s*(href)(?:\s+(title))?\s*\)/).replace("label",F).replace("href",/<(?:\\.|[^\n<>\\])+>|[^\s\x00-\x1f]*/).replace("title",/"(?:\\"?|[^"\\])*"|'(?:\\'?|[^'\\])*'|\((?:\\\)?|[^)\\])*\)/).getRegex(),G=k(/^!?\[(label)\]\[(ref)\]/).replace("label",F).replace("ref",T).getRegex(),J=k(/^!?\[(ref)\](?:\[\])?/).replace("ref",T).getRegex(),K={_backpedal:f,anyPunctuation:j,autolink:H,blockSkip:/\[[^[\]]*?\]\([^\(\)]*?\)|`[^`]*?`|<[^<>]*?>/g,br:v,code:/^(`+)([^`]|[^`][\s\S]*?[^`])\1(?!`)/,del:f,emStrongLDelim:O,emStrongRDelimAst:C,emStrongRDelimUnd:D,escape:Q,link:N,nolink:J,punctuation:M,reflink:G,reflinkSearch:k("reflink|nolink(?!\\()","g").replace("reflink",G).replace("nolink",J).getRegex(),tag:X,text:/^(`+|[^`])(?:(?= {2,}\n)|[\s\S]*?(?:(?=[\\<!\[`*_]|\b_|$)|[^ ](?= {2,}\n)))/,url:f},V={...K,link:k(/^!?\[(label)\]\((.*?)\)/).replace("label",F).getRegex(),reflink:k(/^!?\[(label)\]\s*\[([^\]]*)\]/).replace("label",F).getRegex()},W={...K,escape:k(Q).replace("])","~|])").getRegex(),url:k(/^((?:ftp|https?):\/\/|www\.)(?:[a-zA-Z0-9\-]+\.?)+[^\s<]*|^email/,"i").replace("email",/[A-Za-z0-9._+-]+(@)[a-zA-Z0-9-_]+(?:\.[a-zA-Z0-9-_]*[a-zA-Z0-9])+(?![-_])/).getRegex(),_backpedal:/(?:[^?!.,:;*_'"~()&]+|\([^)]*\)|&(?![a-zA-Z0-9]+;$)|[?!.,:;*_'"~)]+(?!$))+/,del:/^(~~?)(?=[^\s~])([\s\S]*?[^\s~])\1(?=[^~]|$)/,text:/^([`~]+|[^`~])(?:(?= {2,}\n)|(?=[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@)|[\s\S]*?(?:(?=[\\<!\[`*~_]|\b_|https?:\/\/|ftp:\/\/|www\.|$)|[^ ](?= {2,}\n)|[^a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-](?=[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@)))/},Y={...W,br:k(v).replace("{2,}","*").getRegex(),text:k(W.text).replace("\\b_","\\b_| {2,}\\n").replace(/\{2,\}/g,"*").getRegex()},ee={normal:Z,gfm:L,pedantic:P},te={normal:K,gfm:W,breaks:Y,pedantic:V};class ne{tokens;options;state;tokenizer;inlineQueue;constructor(t){this.tokens=[],this.tokens.links=Object.create(null),this.options=t||e.defaults,this.options.tokenizer=this.options.tokenizer||new w,this.tokenizer=this.options.tokenizer,this.tokenizer.options=this.options,this.tokenizer.lexer=this,this.inlineQueue=[],this.state={inLink:!1,inRawBlock:!1,top:!0};const n={block:ee.normal,inline:te.normal};this.options.pedantic?(n.block=ee.pedantic,n.inline=te.pedantic):this.options.gfm&&(n.block=ee.gfm,this.options.breaks?n.inline=te.breaks:n.inline=te.gfm),this.tokenizer.rules=n}static get rules(){return{block:ee,inline:te}}static lex(e,t){return new ne(t).lex(e)}static lexInline(e,t){return new ne(t).inlineTokens(e)}lex(e){e=e.replace(/\r\n|\r/g,"\n"),this.blockTokens(e,this.tokens);for(let e=0;e<this.inlineQueue.length;e++){const t=this.inlineQueue[e];this.inlineTokens(t.src,t.tokens)}return this.inlineQueue=[],this.tokens}blockTokens(e,t=[]){let n,s,r,i;for(e=this.options.pedantic?e.replace(/\t/g,"    ").replace(/^ +$/gm,""):e.replace(/^( *)(\t+)/gm,((e,t,n)=>t+"    ".repeat(n.length)));e;)if(!(this.options.extensions&&this.options.extensions.block&&this.options.extensions.block.some((s=>!!(n=s.call({lexer:this},e,t))&&(e=e.substring(n.raw.length),t.push(n),!0)))))if(n=this.tokenizer.space(e))e=e.substring(n.raw.length),1===n.raw.length&&t.length>0?t[t.length-1].raw+="\n":t.push(n);else if(n=this.tokenizer.code(e))e=e.substring(n.raw.length),s=t[t.length-1],!s||"paragraph"!==s.type&&"text"!==s.type?t.push(n):(s.raw+="\n"+n.raw,s.text+="\n"+n.text,this.inlineQueue[this.inlineQueue.length-1].src=s.text);else if(n=this.tokenizer.fences(e))e=e.substring(n.raw.length),t.push(n);else if(n=this.tokenizer.heading(e))e=e.substring(n.raw.length),t.push(n);else if(n=this.tokenizer.hr(e))e=e.substring(n.raw.length),t.push(n);else if(n=this.tokenizer.blockquote(e))e=e.substring(n.raw.length),t.push(n);else if(n=this.tokenizer.list(e))e=e.substring(n.raw.length),t.push(n);else if(n=this.tokenizer.html(e))e=e.substring(n.raw.length),t.push(n);else if(n=this.tokenizer.def(e))e=e.substring(n.raw.length),s=t[t.length-1],!s||"paragraph"!==s.type&&"text"!==s.type?this.tokens.links[n.tag]||(this.tokens.links[n.tag]={href:n.href,title:n.title}):(s.raw+="\n"+n.raw,s.text+="\n"+n.raw,this.inlineQueue[this.inlineQueue.length-1].src=s.text);else if(n=this.tokenizer.table(e))e=e.substring(n.raw.length),t.push(n);else if(n=this.tokenizer.lheading(e))e=e.substring(n.raw.length),t.push(n);else{if(r=e,this.options.extensions&&this.options.extensions.startBlock){let t=1/0;const n=e.slice(1);let s;this.options.extensions.startBlock.forEach((e=>{s=e.call({lexer:this},n),"number"==typeof s&&s>=0&&(t=Math.min(t,s))})),t<1/0&&t>=0&&(r=e.substring(0,t+1))}if(this.state.top&&(n=this.tokenizer.paragraph(r)))s=t[t.length-1],i&&"paragraph"===s.type?(s.raw+="\n"+n.raw,s.text+="\n"+n.text,this.inlineQueue.pop(),this.inlineQueue[this.inlineQueue.length-1].src=s.text):t.push(n),i=r.length!==e.length,e=e.substring(n.raw.length);else if(n=this.tokenizer.text(e))e=e.substring(n.raw.length),s=t[t.length-1],s&&"text"===s.type?(s.raw+="\n"+n.raw,s.text+="\n"+n.text,this.inlineQueue.pop(),this.inlineQueue[this.inlineQueue.length-1].src=s.text):t.push(n);else if(e){const t="Infinite loop on byte: "+e.charCodeAt(0);if(this.options.silent){console.error(t);break}throw new Error(t)}}return this.state.top=!0,t}inline(e,t=[]){return this.inlineQueue.push({src:e,tokens:t}),t}inlineTokens(e,t=[]){let n,s,r,i,l,o,a=e;if(this.tokens.links){const e=Object.keys(this.tokens.links);if(e.length>0)for(;null!=(i=this.tokenizer.rules.inline.reflinkSearch.exec(a));)e.includes(i[0].slice(i[0].lastIndexOf("[")+1,-1))&&(a=a.slice(0,i.index)+"["+"a".repeat(i[0].length-2)+"]"+a.slice(this.tokenizer.rules.inline.reflinkSearch.lastIndex))}for(;null!=(i=this.tokenizer.rules.inline.blockSkip.exec(a));)a=a.slice(0,i.index)+"["+"a".repeat(i[0].length-2)+"]"+a.slice(this.tokenizer.rules.inline.blockSkip.lastIndex);for(;null!=(i=this.tokenizer.rules.inline.anyPunctuation.exec(a));)a=a.slice(0,i.index)+"++"+a.slice(this.tokenizer.rules.inline.anyPunctuation.lastIndex);for(;e;)if(l||(o=""),l=!1,!(this.options.extensions&&this.options.extensions.inline&&this.options.extensions.inline.some((s=>!!(n=s.call({lexer:this},e,t))&&(e=e.substring(n.raw.length),t.push(n),!0)))))if(n=this.tokenizer.escape(e))e=e.substring(n.raw.length),t.push(n);else if(n=this.tokenizer.tag(e))e=e.substring(n.raw.length),s=t[t.length-1],s&&"text"===n.type&&"text"===s.type?(s.raw+=n.raw,s.text+=n.text):t.push(n);else if(n=this.tokenizer.link(e))e=e.substring(n.raw.length),t.push(n);else if(n=this.tokenizer.reflink(e,this.tokens.links))e=e.substring(n.raw.length),s=t[t.length-1],s&&"text"===n.type&&"text"===s.type?(s.raw+=n.raw,s.text+=n.text):t.push(n);else if(n=this.tokenizer.emStrong(e,a,o))e=e.substring(n.raw.length),t.push(n);else if(n=this.tokenizer.codespan(e))e=e.substring(n.raw.length),t.push(n);else if(n=this.tokenizer.br(e))e=e.substring(n.raw.length),t.push(n);else if(n=this.tokenizer.del(e))e=e.substring(n.raw.length),t.push(n);else if(n=this.tokenizer.autolink(e))e=e.substring(n.raw.length),t.push(n);else if(this.state.inLink||!(n=this.tokenizer.url(e))){if(r=e,this.options.extensions&&this.options.extensions.startInline){let t=1/0;const n=e.slice(1);let s;this.options.extensions.startInline.forEach((e=>{s=e.call({lexer:this},n),"number"==typeof s&&s>=0&&(t=Math.min(t,s))})),t<1/0&&t>=0&&(r=e.substring(0,t+1))}if(n=this.tokenizer.inlineText(r))e=e.substring(n.raw.length),"_"!==n.raw.slice(-1)&&(o=n.raw.slice(-1)),l=!0,s=t[t.length-1],s&&"text"===s.type?(s.raw+=n.raw,s.text+=n.text):t.push(n);else if(e){const t="Infinite loop on byte: "+e.charCodeAt(0);if(this.options.silent){console.error(t);break}throw new Error(t)}}else e=e.substring(n.raw.length),t.push(n);return t}}class se{options;constructor(t){this.options=t||e.defaults}code(e,t,n){const s=(t||"").match(/^\S*/)?.[0];return e=e.replace(/\n$/,"")+"\n",s?'<pre><code class="language-'+c(s)+'">'+(n?e:c(e,!0))+"</code></pre>\n":"<pre><code>"+(n?e:c(e,!0))+"</code></pre>\n"}blockquote(e){return`<blockquote>\n${e}</blockquote>\n`}html(e,t){return e}heading(e,t,n){return`<h${t}>${e}</h${t}>\n`}hr(){return"<hr>\n"}list(e,t,n){const s=t?"ol":"ul";return"<"+s+(t&&1!==n?' start="'+n+'"':"")+">\n"+e+"</"+s+">\n"}listitem(e,t,n){return`<li>${e}</li>\n`}checkbox(e){return"<input "+(e?'checked="" ':"")+'disabled="" type="checkbox">'}paragraph(e){return`<p>${e}</p>\n`}table(e,t){return t&&(t=`<tbody>${t}</tbody>`),"<table>\n<thead>\n"+e+"</thead>\n"+t+"</table>\n"}tablerow(e){return`<tr>\n${e}</tr>\n`}tablecell(e,t){const n=t.header?"th":"td";return(t.align?`<${n} align="${t.align}">`:`<${n}>`)+e+`</${n}>\n`}strong(e){return`<strong>${e}</strong>`}em(e){return`<em>${e}</em>`}codespan(e){return`<code>${e}</code>`}br(){return"<br>"}del(e){return`<del>${e}</del>`}link(e,t,n){const s=g(e);if(null===s)return n;let r='<a href="'+(e=s)+'"';return t&&(r+=' title="'+t+'"'),r+=">"+n+"</a>",r}image(e,t,n){const s=g(e);if(null===s)return n;let r=`<img src="${e=s}" alt="${n}"`;return t&&(r+=` title="${t}"`),r+=">",r}text(e){return e}}class re{strong(e){return e}em(e){return e}codespan(e){return e}del(e){return e}html(e){return e}text(e){return e}link(e,t,n){return""+n}image(e,t,n){return""+n}br(){return""}}class ie{options;renderer;textRenderer;constructor(t){this.options=t||e.defaults,this.options.renderer=this.options.renderer||new se,this.renderer=this.options.renderer,this.renderer.options=this.options,this.textRenderer=new re}static parse(e,t){return new ie(t).parse(e)}static parseInline(e,t){return new ie(t).parseInline(e)}parse(e,t=!0){let n="";for(let s=0;s<e.length;s++){const r=e[s];if(this.options.extensions&&this.options.extensions.renderers&&this.options.extensions.renderers[r.type]){const e=r,t=this.options.extensions.renderers[e.type].call({parser:this},e);if(!1!==t||!["space","hr","heading","code","table","blockquote","list","html","paragraph","text"].includes(e.type)){n+=t||"";continue}}switch(r.type){case"space":continue;case"hr":n+=this.renderer.hr();continue;case"heading":{const e=r;n+=this.renderer.heading(this.parseInline(e.tokens),e.depth,p(this.parseInline(e.tokens,this.textRenderer)));continue}case"code":{const e=r;n+=this.renderer.code(e.text,e.lang,!!e.escaped);continue}case"table":{const e=r;let t="",s="";for(let t=0;t<e.header.length;t++)s+=this.renderer.tablecell(this.parseInline(e.header[t].tokens),{header:!0,align:e.align[t]});t+=this.renderer.tablerow(s);let i="";for(let t=0;t<e.rows.length;t++){const n=e.rows[t];s="";for(let t=0;t<n.length;t++)s+=this.renderer.tablecell(this.parseInline(n[t].tokens),{header:!1,align:e.align[t]});i+=this.renderer.tablerow(s)}n+=this.renderer.table(t,i);continue}case"blockquote":{const e=r,t=this.parse(e.tokens);n+=this.renderer.blockquote(t);continue}case"list":{const e=r,t=e.ordered,s=e.start,i=e.loose;let l="";for(let t=0;t<e.items.length;t++){const n=e.items[t],s=n.checked,r=n.task;let o="";if(n.task){const e=this.renderer.checkbox(!!s);i?n.tokens.length>0&&"paragraph"===n.tokens[0].type?(n.tokens[0].text=e+" "+n.tokens[0].text,n.tokens[0].tokens&&n.tokens[0].tokens.length>0&&"text"===n.tokens[0].tokens[0].type&&(n.tokens[0].tokens[0].text=e+" "+n.tokens[0].tokens[0].text)):n.tokens.unshift({type:"text",text:e+" "}):o+=e+" "}o+=this.parse(n.tokens,i),l+=this.renderer.listitem(o,r,!!s)}n+=this.renderer.list(l,t,s);continue}case"html":{const e=r;n+=this.renderer.html(e.text,e.block);continue}case"paragraph":{const e=r;n+=this.renderer.paragraph(this.parseInline(e.tokens));continue}case"text":{let i=r,l=i.tokens?this.parseInline(i.tokens):i.text;for(;s+1<e.length&&"text"===e[s+1].type;)i=e[++s],l+="\n"+(i.tokens?this.parseInline(i.tokens):i.text);n+=t?this.renderer.paragraph(l):l;continue}default:{const e='Token with "'+r.type+'" type was not found.';if(this.options.silent)return console.error(e),"";throw new Error(e)}}}return n}parseInline(e,t){t=t||this.renderer;let n="";for(let s=0;s<e.length;s++){const r=e[s];if(this.options.extensions&&this.options.extensions.renderers&&this.options.extensions.renderers[r.type]){const e=this.options.extensions.renderers[r.type].call({parser:this},r);if(!1!==e||!["escape","html","link","image","strong","em","codespan","br","del","text"].includes(r.type)){n+=e||"";continue}}switch(r.type){case"escape":{const e=r;n+=t.text(e.text);break}case"html":{const e=r;n+=t.html(e.text);break}case"link":{const e=r;n+=t.link(e.href,e.title,this.parseInline(e.tokens,t));break}case"image":{const e=r;n+=t.image(e.href,e.title,e.text);break}case"strong":{const e=r;n+=t.strong(this.parseInline(e.tokens,t));break}case"em":{const e=r;n+=t.em(this.parseInline(e.tokens,t));break}case"codespan":{const e=r;n+=t.codespan(e.text);break}case"br":n+=t.br();break;case"del":{const e=r;n+=t.del(this.parseInline(e.tokens,t));break}case"text":{const e=r;n+=t.text(e.text);break}default:{const e='Token with "'+r.type+'" type was not found.';if(this.options.silent)return console.error(e),"";throw new Error(e)}}}return n}}class le{options;constructor(t){this.options=t||e.defaults}static passThroughHooks=new Set(["preprocess","postprocess","processAllTokens"]);preprocess(e){return e}postprocess(e){return e}processAllTokens(e){return e}}class oe{defaults={async:!1,breaks:!1,extensions:null,gfm:!0,hooks:null,pedantic:!1,renderer:null,silent:!1,tokenizer:null,walkTokens:null};options=this.setOptions;parse=this.#e(ne.lex,ie.parse);parseInline=this.#e(ne.lexInline,ie.parseInline);Parser=ie;Renderer=se;TextRenderer=re;Lexer=ne;Tokenizer=w;Hooks=le;constructor(...e){this.use(...e)}walkTokens(e,t){let n=[];for(const s of e)switch(n=n.concat(t.call(this,s)),s.type){case"table":{const e=s;for(const s of e.header)n=n.concat(this.walkTokens(s.tokens,t));for(const s of e.rows)for(const e of s)n=n.concat(this.walkTokens(e.tokens,t));break}case"list":{const e=s;n=n.concat(this.walkTokens(e.items,t));break}default:{const e=s;this.defaults.extensions?.childTokens?.[e.type]?this.defaults.extensions.childTokens[e.type].forEach((s=>{const r=e[s].flat(1/0);n=n.concat(this.walkTokens(r,t))})):e.tokens&&(n=n.concat(this.walkTokens(e.tokens,t)))}}return n}use(...e){const t=this.defaults.extensions||{renderers:{},childTokens:{}};return e.forEach((e=>{const n={...e};if(n.async=this.defaults.async||n.async||!1,e.extensions&&(e.extensions.forEach((e=>{if(!e.name)throw new Error("extension name required");if("renderer"in e){const n=t.renderers[e.name];t.renderers[e.name]=n?function(...t){let s=e.renderer.apply(this,t);return!1===s&&(s=n.apply(this,t)),s}:e.renderer}if("tokenizer"in e){if(!e.level||"block"!==e.level&&"inline"!==e.level)throw new Error("extension level must be 'block' or 'inline'");const n=t[e.level];n?n.unshift(e.tokenizer):t[e.level]=[e.tokenizer],e.start&&("block"===e.level?t.startBlock?t.startBlock.push(e.start):t.startBlock=[e.start]:"inline"===e.level&&(t.startInline?t.startInline.push(e.start):t.startInline=[e.start]))}"childTokens"in e&&e.childTokens&&(t.childTokens[e.name]=e.childTokens)})),n.extensions=t),e.renderer){const t=this.defaults.renderer||new se(this.defaults);for(const n in e.renderer){if(!(n in t))throw new Error(`renderer '${n}' does not exist`);if("options"===n)continue;const s=n,r=e.renderer[s],i=t[s];t[s]=(...e)=>{let n=r.apply(t,e);return!1===n&&(n=i.apply(t,e)),n||""}}n.renderer=t}if(e.tokenizer){const t=this.defaults.tokenizer||new w(this.defaults);for(const n in e.tokenizer){if(!(n in t))throw new Error(`tokenizer '${n}' does not exist`);if(["options","rules","lexer"].includes(n))continue;const s=n,r=e.tokenizer[s],i=t[s];t[s]=(...e)=>{let n=r.apply(t,e);return!1===n&&(n=i.apply(t,e)),n}}n.tokenizer=t}if(e.hooks){const t=this.defaults.hooks||new le;for(const n in e.hooks){if(!(n in t))throw new Error(`hook '${n}' does not exist`);if("options"===n)continue;const s=n,r=e.hooks[s],i=t[s];le.passThroughHooks.has(n)?t[s]=e=>{if(this.defaults.async)return Promise.resolve(r.call(t,e)).then((e=>i.call(t,e)));const n=r.call(t,e);return i.call(t,n)}:t[s]=(...e)=>{let n=r.apply(t,e);return!1===n&&(n=i.apply(t,e)),n}}n.hooks=t}if(e.walkTokens){const t=this.defaults.walkTokens,s=e.walkTokens;n.walkTokens=function(e){let n=[];return n.push(s.call(this,e)),t&&(n=n.concat(t.call(this,e))),n}}this.defaults={...this.defaults,...n}})),this}setOptions(e){return this.defaults={...this.defaults,...e},this}lexer(e,t){return ne.lex(e,t??this.defaults)}parser(e,t){return ie.parse(e,t??this.defaults)}#e(e,t){return(n,s)=>{const r={...s},i={...this.defaults,...r};!0===this.defaults.async&&!1===r.async&&(i.silent||console.warn("marked(): The async option was set to true by an extension. The async: false option sent to parse will be ignored."),i.async=!0);const l=this.#t(!!i.silent,!!i.async);if(null==n)return l(new Error("marked(): input parameter is undefined or null"));if("string"!=typeof n)return l(new Error("marked(): input parameter is of type "+Object.prototype.toString.call(n)+", string expected"));if(i.hooks&&(i.hooks.options=i),i.async)return Promise.resolve(i.hooks?i.hooks.preprocess(n):n).then((t=>e(t,i))).then((e=>i.hooks?i.hooks.processAllTokens(e):e)).then((e=>i.walkTokens?Promise.all(this.walkTokens(e,i.walkTokens)).then((()=>e)):e)).then((e=>t(e,i))).then((e=>i.hooks?i.hooks.postprocess(e):e)).catch(l);try{i.hooks&&(n=i.hooks.preprocess(n));let s=e(n,i);i.hooks&&(s=i.hooks.processAllTokens(s)),i.walkTokens&&this.walkTokens(s,i.walkTokens);let r=t(s,i);return i.hooks&&(r=i.hooks.postprocess(r)),r}catch(e){return l(e)}}}#t(e,t){return n=>{if(n.message+="\nPlease report this to https://github.com/markedjs/marked.",e){const e="<p>An error occurred:</p><pre>"+c(n.message+"",!0)+"</pre>";return t?Promise.resolve(e):e}if(t)return Promise.reject(n);throw n}}}const ae=new oe;function ce(e,t){return ae.parse(e,t)}ce.options=ce.setOptions=function(e){return ae.setOptions(e),ce.defaults=ae.defaults,n(ce.defaults),ce},ce.getDefaults=t,ce.defaults=e.defaults,ce.use=function(...e){return ae.use(...e),ce.defaults=ae.defaults,n(ce.defaults),ce},ce.walkTokens=function(e,t){return ae.walkTokens(e,t)},ce.parseInline=ae.parseInline,ce.Parser=ie,ce.parser=ie.parse,ce.Renderer=se,ce.TextRenderer=re,ce.Lexer=ne,ce.lexer=ne.lex,ce.Tokenizer=w,ce.Hooks=le,ce.parse=ce;const he=ce.options,pe=ce.setOptions,ue=ce.use,ke=ce.walkTokens,ge=ce.parseInline,fe=ce,de=ie.parse,xe=ne.lex;e.Hooks=le,e.Lexer=ne,e.Marked=oe,e.Parser=ie,e.Renderer=se,e.TextRenderer=re,e.Tokenizer=w,e.getDefaults=t,e.lexer=xe,e.marked=ce,e.options=he,e.parse=fe,e.parseInline=ge,e.parser=de,e.setOptions=pe,e.use=ue,e.walkTokens=ke}));
+
+</script></head><body>
+
+<a class="skip" href="#main">Skip to content</a>
+<div id="readbar" aria-hidden="true"></div>
+<div id="live" class="sr-only" aria-live="polite"></div>
+<div id="app"></div>
+<aside id="drawer" class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTag" aria-hidden="true">
+  <div class="drawer-head"><span class="drawer-tag" id="drawerTag">Info</span>
+    <a id="drawerSource" class="drawer-source" href="#" target="_blank" rel="noopener">open original ↗</a>
+    <button id="drawerClose" class="drawer-close" title="Close">✕</button></div>
+  <div id="drawerBody" class="drawer-body"></div></aside>
+<div id="scrim" class="scrim" hidden></div>
+<script>const FEED_BASE="https://kairosllm.github.io/smart-money";</script>
+<script>const DATA={"tiers": [{"key": "daily", "label": "Daily Tape", "blurb": "Fresh activist 13Ds and conviction insider buys, trading-day mornings.", "days": [{"id": "2026-07-04", "date": "2026-07-04", "headline": "Wallbox board and CEO buy $5M in unison as Uber puts $20M into Lime", "subtitle": "A clean EV-charging insider cluster leads a quiet holiday tape, with two fresh biotech 13Ds and a strategic corporate accumulator scaling up.", "tickers": ["CALC", "PASG", "LFCR", "WBX", "CREX", "PSNY", "LIME", "BNR", "HDSN", "BBD", "PSBD", "BRT", "OLP"], "funds": ["Bering Partners", "Lynx1 Capital", "22NW", "Legion Partners", "Uber", "Hartree Partners"], "body": "**Headline:** Wallbox board and CEO buy $5M in unison as Uber puts $20M into Lime\n**Subtitle:** A clean EV-charging insider cluster leads a quiet holiday tape, with two fresh biotech 13Ds and a strategic corporate accumulator scaling up.\n**Tickers:** CALC, PASG, LFCR, WBX, CREX, PSNY, LIME, BNR, HDSN, BBD, PSBD, BRT, OLP\n**Funds:** Bering Partners, Lynx1 Capital, 22NW, Legion Partners, Uber, Hartree Partners\n\n# Daily Tape \u2014 July 4, 2026\n\nNo watchlist-whale 13Ds, early 13Fs, or Scion filings crossed the wire. The tape today is carried by a clean EV-charging insider cluster and a strategic corporate accumulator.\n\n## Fresh 13Ds\n\n- **CALC** \u2014 Bering Partners II GP filed a new SCHEDULE 13D on **CalciMedica**, an immunology-focused biotech. A first-time activist-scale stake in a small-cap developer is worth a flag. [Filing](https://www.sec.gov/Archives/edgar/data/1811744/0001193125-26-295162-index.html)\n- **PASG** \u2014 Lynx1 Capital Management opened a 13D on **Passage BIO**, a gene-therapy name that has spent the year near cash value. Concentrated biotech money stepping in at the bottom of the range. [Filing](https://www.sec.gov/Archives/edgar/data/1910456/0000902664-26-003000-index.html)\n\nSkipped as internal/affiliated plumbing: Gould Investors' twin 13Ds on **BRT** Apartments and **OLP** (One Liberty), the Jefferies-to-Jefferies-BDC filing, and the Hugreat/Alpex SPAC stake. On the amendment side, **LFCR** (Lifecore Biomedical) drew same-day 13D/A activity from *both* 22NW and Legion Partners \u2014 the seat-holders are still active, worth watching, but no fresh escalation disclosed.\n\n## Insider tape \u2014 clusters\n\n- **WBX** (Wallbox N.V.) \u2014 the standout. Four insiders bought ~$5.0M of the EV-charging maker on the same day: three directors at **$1.36M each** plus CEO Enric Asuncion Escorsa adding **$887k**. Board-plus-CEO buying in unison, near multi-year lows, is the highest-conviction print on the tape.\n- **CREX** (Creative Realities) \u2014 CEO Richard Mills bought **$700k** and CFO Tamra Koshewa **$100k** of the digital-signage micro-cap, an $800k C-suite cluster at $3.50.\n- **PSNY** (Polestar) \u2014 three directors added a combined ~$78k. Small, but directional board buying in the EV maker.\n\n## Insider tape \u2014 notable singles\n\n- **LIME** (Neutron Holdings) \u2014 **Uber** put **$20M** to work (800k shares at $25) lifting its stake in the micromobility operator. A strategic corporate buyer scaling up is a different signal than an insider, but the size demands notice.\n- **BNR** (Burning Rock Biotech) \u2014 director Yusheng Han disclosed **$6.2M** of open-market buying across the June 11 session in the China cancer-diagnostics name.\n- **HDSN** (Hudson Technologies) \u2014 Hartree Partners, a 10% owner, added **$4.5M** of the refrigerant reclaimer at ~$5.85.\n- **BBD** (Bank Bradesco) \u2014 CLO/executive officer Julio Cesar Bueno bought **$2.0M** of the Brazilian bank.\n- **PSBD** (Palmer Square Capital BDC) \u2014 10% owner Martin Bicknell added **$845k** near $10.55.\n\n*Data window 2026-07-02 to 2026-07-04. Not investment advice.*\n"}]}, {"key": "weekly", "label": "Pattern Watch", "blurb": "Saturday analysis: repeat buyers, escalations, cross-day patterns.", "days": []}, {"key": "quarterly", "label": "13F Deep Dive", "blurb": "The flagship cross-fund read after each quarter's 13F flood.", "days": [{"id": "2026-07-04", "date": "2026-07-04", "headline": "The whales are rotating within the AI trade, not out of it", "subtitle": "Q1 13Fs across 17 famous funds: out of software mega-caps, into chips, memory, and power. Alphabet is the quiet consensus buy, Ackman went the other way, and Druckenmiller is betting on Argentina.", "tickers": ["MSFT", "GOOGL", "TSM", "MU", "SNDK", "STX", "AMAT", "KLAC", "TER", "EQIX", "ASML", "VST", "TLN", "WULF", "GEV", "DAL", "LEN", "NYT", "YPF", "ARGT", "KKR", "SPOT", "ALKT", "CNTA", "OPI", "MANU", "NNDM", "PASG", "SPG", "WBX", "PSNY", "NVCT", "CREX", "LIME", "HDSN", "BBD"], "funds": ["Berkshire", "Pershing Square", "Tiger Global", "Appaloosa", "Bridgewater", "Coatue", "Lone Pine", "Third Point", "Duquesne", "Elliott", "DME Capital", "ValueAct", "Scion", "JANA Partners", "Farallon", "Trian", "Icahn"], "body": "**Headline:** The whales are rotating within the AI trade, not out of it\n**Subtitle:** Q1 13Fs across 17 famous funds: out of software mega-caps, into chips, memory, and power. Alphabet is the quiet consensus buy, Ackman went the other way, and Druckenmiller is betting on Argentina.\n**Tickers:** MSFT, GOOGL, TSM, MU, SNDK, STX, AMAT, KLAC, TER, EQIX, ASML, VST, TLN, WULF, GEV, DAL, LEN, NYT, YPF, ARGT, KKR, SPOT, ALKT, CNTA, OPI, MANU, NNDM, PASG, SPG, WBX, PSNY, NVCT, CREX, LIME, HDSN, BBD\n**Funds:** Berkshire, Pershing Square, Tiger Global, Appaloosa, Bridgewater, Coatue, Lone Pine, Third Point, Duquesne, Elliott, DME Capital, ValueAct, Scion, JANA Partners, Farallon, Trian, Icahn\n\n# Smart Money Digest \u2014 July 4, 2026\n\n*What billionaire investors are actually doing, straight from SEC EDGAR: 13F holdings changes across 17 famous funds, fresh activist stakes (SCHEDULE 13D), and insider open-market buys (Form 4). First edition \u2014 this one establishes the baseline.*\n\n---\n\n## TL;DR\n\n- **The whales are rotating within the AI trade, not out of it** \u2014 selling software mega-caps (Microsoft, Salesforce, Oracle, Snowflake) and buying the physical layer: chips, memory, fab equipment, data centers, and the power to run them.\n- **Alphabet is the quiet consensus buy.** Berkshire tripled its stake to $15.6B. Third Point, Lone Pine, and Bridgewater all opened or added.\n- **Ackman went the other way**, opening a new $2.1B Microsoft position (15% of his book) while everyone else trimmed it.\n- **Druckenmiller is betting on Argentina** \u2014 YPF up +433%, plus a new Argentina ETF position.\n- **Insider tape this week:** the entire Simon Property board bought stock together, and EV-charging maker Wallbox saw its CEO plus three directors buy $5M at once.\n\n---\n\n## 1. The Big Rotation: out of software, into silicon and power\n\nThe most striking pattern across Q1 13Fs (period ending March 31, filed mid-May) is how many unrelated funds made the *same* trade:\n\n**Sold software mega-caps:**\n- Microsoft: trimmed \u221254% by Tiger Global, \u221282% by Tepper, exited entirely by Lone Pine and Third Point\n- Bridgewater exited Salesforce ($512M), Workday, and ServiceNow outright\n- Coatue exited Oracle ($865M), Snowflake ($544M), Adobe, AMD, and Arm\n\n**Bought AI hardware, memory, and fab equipment:**\n- TSMC: Tiger +49% (to $1.9B), Bridgewater opened a new $364M position, Coatue holds it as their #1 at 10.8% of book\n- Memory/storage everywhere: Tepper made Micron his #2 holding (9.5%) and opened Sandisk; Druckenmiller opened Sandisk *and* Seagate; Bridgewater added Micron +66%; Coatue opened Micron\n- Equipment: Tiger added Applied Materials +85%; Bridgewater added KLA +39%, Teradyne +70%, Credo +220%; Lone Pine opened a $555M Teradyne position\n- Coatue opened a **$1.1B Equinix** (data center REIT) position and $655M of ASML\n\n**Bought the power layer:**\n- Vistra: Tepper +114%, Lone Pine holds it as their #1 position\n- Lone Pine added Talen Energy +41% and opened TeraWulf, Hut 8, and Argan (power plant builder) \u2014 a straight \"who builds and feeds data centers\" basket\n- Coatue's #2 holding is GE Vernova (7.7% of book)\n\n**The read:** the smart money isn't calling the AI trade over \u2014 they're calling the *software* part crowded and moving down the stack to compute, memory, and electricity. Retail is still mostly arguing about chatbot subscriptions.\n\n## 2. The Alphabet accumulation\n\n- **Berkshire** added +204% to GOOGL \u2014 now a $15.6B position, 5.9% of the book, their 7th largest. They also opened a smaller new GOOG lot while exiting Visa, Mastercard, UnitedHealth, and Domino's.\n- **Third Point** and **Lone Pine** opened new GOOGL positions; **Bridgewater** added +26% and opened GOOG.\n- Counterpoint: Coatue trimmed \u221237% and Pershing Square nearly exited (\u221295%), so it's not unanimous \u2014 but the buyer list is heavyweight.\n\n## 3. Contrarian corner\n\n- **Ackman (Pershing Square): new $2.1B Microsoft position** \u2014 15.3% of his concentrated 11-stock book \u2014 initiated exactly while Tiger, Tepper, Lone Pine, and Third Point were cutting it. Also exited Hilton and nearly exited Alphabet.\n- **Buffett bought an airline again**: new $2.6B Delta position (he famously swore off airlines in 2020). Also added Lennar +43% (homebuilder value) and NYT +199%.\n- **Burry watch:** Scion's last 13F is still Q3 2025 \u2014 66% of it was Palantir puts and 13.5% Nvidia puts \u2014 and he hasn't filed since (deregistered). No current data, but worth remembering the biggest AI skeptic went dark holding shorts.\n- **Elliott** is positioned defensively: new puts on consumer discretionary (XLY), high-yield credit (HYG), and small caps (IWM), plus new gold-miner calls (GDX) \u2014 while holding Phillips 66 and Suncor as top longs and adding HPE +47%.\n- **Einhorn (now filing as DME Capital)**: new positions in Versant Media ($112M), Crocs, and Resideo; still 19% Green Brick Partners.\n- **ValueAct**: opened KKR ($303M, 5.3% of book), Spotify ($174M), and Wix.\n- **Druckenmiller**: besides Argentina (YPF +433%, new ARGT ETF), his #1 is still Natera (18% of book) and he added STMicro +238% while exiting his XLF financials hedge.\n\n## 4. Activist corner (fresh 13Ds \u2014 these are near-real-time)\n\nNew \u22655% activist stakes filed in the last two weeks:\n\n- **JANA Partners \u2192 Alkami Technology (ALKT)** \u2014 a proven activist targeting a bank-software vendor (June 29)\n- **Farallon \u2192 Centessa Pharmaceuticals (CNTA)** (June 24)\n- **Two funds hit Office Properties Income Trust (OPI) on the same day** \u2014 Helix Partners and Redwood Capital (June 25); distressed office REIT with two activists circling\n- **INEOS \u2192 Manchester United (MANU)** \u2014 Ratcliffe consolidating (June 29)\n- **Tang Capital \u2192 Nano Dimension (NNDM)** (June 30); Tang also bought $806k of Boundless Bio (BOLD) stock this week per Form 4\n- **Lynx1 \u2192 Passage Bio (PASG)**; **Perceptive + ARCH \u2192 Kardigan** (private-to-be-public biotech)\n\nNotable amendments (existing campaigns moving): Trian \u2194 Janus Henderson, Elliott \u2194 Triple Flag Precious Metals, Toyota \u2194 Joby Aviation, Biglari \u2194 El Pollo Loco, D.E. Shaw \u2194 Gossamer Bio, Legion + 22NW both in Lifecore Biomedical.\n\n## 5. Insider conviction buys (Form 4, open-market purchases only, July 1\u20132 filings)\n\nCluster buys \u2014 multiple insiders buying together, the strongest insider signal:\n\n- **Simon Property Group (SPG): 9 directors bought simultaneously** (~$478k total). Board-wide buys at a blue-chip mall REIT are rare.\n- **Wallbox (WBX): CEO + 3 directors bought $5M** in the EV-charging maker (June 30)\n- **Polestar (PSNY): 6 directors/officers bought** (~$256k)\n- **Nuvectis Pharma (NVCT): 2 insiders, $1.2M** \u2014 CEO Bentsur $500k + a 10% owner $916k\n- **Creative Realities (CREX): CEO bought $700k** (200k shares at $3.50) alongside the CFO \u2014 *and* the same CEO filed a 13D/A this week. Micro-cap, but insiders are acting like owners.\n\nNotable large buys: **Uber added $20M to Lime** (Neutron Holdings \u2014 pre-IPO scooter company, Uber now averaging up as 10% owner); RH director Carlos Alberini bought $1.8M; Hartree Partners added $4.5M of Hudson Technologies (HDSN); Bradesco's CLO bought $2M of BBD.\n\n## 6. What retail isn't looking at yet\n\n1. **Memory and storage as the AI bottleneck trade** \u2014 Micron, Sandisk, Seagate showing up as *new* positions across four unrelated whale books is the closest thing to a coordinated signal in this data.\n2. **Power infrastructure as a compounding theme, not a meme** \u2014 Vistra/Talen/GE Vernova/Argan/TeraWulf across multiple books; retail talks about it, but the whales keep sizing it up.\n3. **Argentina** \u2014 Druckenmiller quintupling YPF and buying the country ETF is a macro bet almost nobody retail-side is positioned for.\n4. **Office real estate distress as an activist hunting ground** \u2014 two funds filing 13Ds on OPI the same day suggests the bottom-fishing has started.\n5. **Boards buying their own beaten-down names** (SPG, WBX, PSNY) while indices sit near highs \u2014 insiders see value where the narrative is coldest.\n\n---\n\n## Caveats\n\n- 13F data is as of **March 31, 2026** (filed May 15) \u2014 the latest legally available snapshot, ~3 months stale. Positions may have changed. 13Fs also omit shorts, bonds, and non-US-listed holdings (e.g. Burry's book was mostly *puts*, which do show; Elliott's activist positions are often in derivatives that don't).\n- 13D and Form 4 data is current through **July 2** (July 3\u20134 = market holiday).\n- Dollar values for 13F positions are as of quarter-end prices.\n- This is data + pattern-reading, not investment advice.\n\n*Generated from SEC EDGAR via edgartools. Watchlist: Berkshire, Scion, Pershing Square, Duquesne, Appaloosa, Baupost, Third Point, Greenlight/DME, Icahn, Elliott, Starboard, ValueAct, Coatue, Lone Pine, Tiger Global, Bridgewater, Soros.*\n"}]}, {"key": "spotlight", "label": "Fund Spotlights", "blurb": "One famous fund's quarter, close up.", "days": []}]};</script>
+<script>
+'use strict';
+/* Smart Money Digest — four-tier reader (Daily Tape / Pattern Watch / 13F Deep Dive /
+   Fund Spotlights). Forked from the Alpha Funnel reader; works two ways from ONE codebase:
+   - standalone digest.html: a global `DATA` is embedded (days carry `body`).
+   - served site/: no DATA, so we fetch manifest.json and lazy-load piece bodies. */
+
+const EMBEDDED = (typeof DATA !== 'undefined') ? DATA : null;
+
+const TOP_CHIPS = 15; // chips shown per filter row before "show all"
+
+let TIERS = [];          // [{key, label, blurb, days:[{id,date,headline,subtitle,tickers,funds,path?,body?}]}]
+let T_BY_KEY = {};       // key -> tier object
+let activeKey = null;    // current tier key
+
+let state = { filter: null, showAllTickers: false, showAllFunds: false }; // filter = {kind:'ticker'|'fund', value} | null
+let SEEN = new Set();    // "key/id" of pieces already opened (persisted to localStorage smd-seen)
+
+const elDrawer = () => document.getElementById('drawer');
+const elScrim = () => document.getElementById('scrim');
+
+marked.setOptions({ breaks: false, gfm: true });
+
+init();
+
+async function init() {
+  initTheme();
+  try {
+    let src;
+    if (EMBEDDED) {
+      src = EMBEDDED;
+    } else {
+      src = await fetchJSON('manifest.json');
+    }
+    TIERS = (src.tiers || []).map(t => ({ ...t, days: (t.days || []).slice() }));
+  } catch (e) {
+    document.getElementById('app').innerHTML =
+      `<div class="wrap"><p class="empty">Couldn't load the digest. (${esc(String(e))})</p></div>`;
+    return;
+  }
+  if (!TIERS.length) {
+    document.getElementById('app').innerHTML =
+      `<div class="wrap"><p class="empty">No tiers found.</p></div>`;
+    return;
+  }
+  TIERS.forEach(t => {
+    t.days.sort((a, b) => b.date.localeCompare(a.date));   // newest first
+    T_BY_KEY[t.key] = t;
+  });
+  activeKey = TIERS[0].key; // default tier (Daily Tape)
+  loadSeen();
+
+  document.getElementById('drawerClose').addEventListener('click', closeDrawer);
+  elScrim().addEventListener('click', closeDrawer);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
+  document.addEventListener('keydown', keyNav);
+  document.addEventListener('keydown', trapTab);
+  window.addEventListener('scroll', onReadScroll, { passive: true });
+  const skip = document.querySelector('.skip');
+  if (skip) skip.addEventListener('click', e => {
+    e.preventDefault();
+    const mn = document.getElementById('main');
+    if (mn) { mn.focus(); mn.scrollIntoView(); }
+  });
+  window.addEventListener('hashchange', route);
+  route();
+}
+
+/* ---------- "new since last visit" tracking (localStorage) ---------- */
+function loadSeen() {
+  let raw = null;
+  try { raw = localStorage.getItem('smd-seen'); } catch (e) {}
+  if (raw == null) {
+    // first ever visit: seed with every current piece so nothing shows as falsely "new"
+    TIERS.forEach(t => t.days.forEach(d => SEEN.add(t.key + '/' + d.id)));
+    persistSeen();
+  } else {
+    try { (JSON.parse(raw) || []).forEach(k => SEEN.add(k)); } catch (e) {}
+  }
+}
+function persistSeen() { try { localStorage.setItem('smd-seen', JSON.stringify([...SEEN])); } catch (e) {} }
+function isNew(key, id) { return !SEEN.has(key + '/' + id); }
+function markSeen(key, id) { if (isNew(key, id)) { SEEN.add(key + '/' + id); persistSeen(); } }
+function tierHasNew(t) { return t.days.some(d => isNew(t.key, d.id)); }
+
+function TI() { return T_BY_KEY[activeKey] || TIERS[0]; }
+
+/* ---------- routing ---------- */
+// #/<tier>            -> that tier's list
+// #/<tier>/<date>     -> a reading view (date = 2026-07-04)
+function route() {
+  closeDrawer();   // any open drawer (search / what-is-this / subscribe) shouldn't linger across nav
+  const m = (location.hash || '').match(/^#\/([a-z-]+)(?:\/(\d{4}-\d{2}-\d{2}))?$/);
+  if (m && T_BY_KEY[m[1]]) {
+    if (activeKey !== m[1]) { activeKey = m[1]; resetTierState(); }
+    if (m[2] && TI().days.some(d => d.id === m[2])) {
+      renderRead(m[2]); window.scrollTo(0, 0);
+      const d = TI().days.find(x => x.id === m[2]);
+      afterRoute(d ? d.headline : 'Reading'); return;
+    }
+    renderList(); window.scrollTo(0, 0); afterRoute(TI().label + ' pieces'); return;
+  }
+  renderSplash();          // home / index is the splash landing
+  window.scrollTo(0, 0);
+  afterRoute('Smart Money Digest home');
+}
+
+// SPA a11y: announce the new view to screen readers and move focus to the main landmark
+function afterRoute(label) {
+  const live = document.getElementById('live');
+  if (live) live.textContent = label;
+  const bar = document.getElementById('readbar');   // reset progress bar when leaving a reading view
+  if (bar && !/^#\/[a-z-]+\/.+/.test(location.hash || '')) bar.style.width = '0%';
+  const mainEl = document.getElementById('main');
+  if (mainEl) { try { mainEl.focus({ preventScroll: true }); } catch (e) { mainEl.focus(); } }
+}
+
+function resetTierState() { state.filter = null; state.showAllTickers = false; state.showAllFunds = false; }
+
+// friendly date: "2026-07-04" -> "Jul 4" (parsed manually to avoid TZ shifts)
+function prettyDate(iso) {
+  const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || '');
+  return m ? MONTHS[+m[2] - 1] + ' ' + (+m[3]) : (iso || '');
+}
+// long friendly date for the reading-view kicker: "2026-07-04" -> "July 4, 2026"
+function prettyDateFull(iso) {
+  const M = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
+    'August', 'September', 'October', 'November', 'December'];
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || '');
+  return m ? M[+m[2] - 1] + ' ' + (+m[3]) + ', ' + m[1] : (iso || '');
+}
+
+function go(hash) { location.hash = hash; }
+function goTier(key) { if (key !== activeKey) go('#/' + key); }
+function goHome() {
+  if (location.hash === '' || location.hash === '#' || location.hash === '#/') {
+    renderSplash(); window.scrollTo(0, 0);       // already home; just re-render
+  } else {
+    go('#/');                                     // hashchange -> route() -> renderSplash
+  }
+}
+// Reading view: <- older piece, -> newer. List view: j/k move through pieces (Enter opens natively).
+function keyNav(e) {
+  if (e.metaKey || e.ctrlKey || e.altKey || e.defaultPrevented) return;
+  const tag = (e.target && e.target.tagName) || '';
+  if (tag === 'INPUT' || tag === 'TEXTAREA' || (e.target && e.target.isContentEditable)) return;
+  if (elDrawer().classList.contains('open')) return;
+
+  if (e.key === '/') { e.preventDefault(); openSearch(); return; }
+  if (e.key === '?') { e.preventDefault(); openShortcuts(); return; }
+
+  if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+    const m = (location.hash || '').match(/^#\/([a-z-]+)\/(.+)$/);
+    if (!m || !T_BY_KEY[m[1]]) return;
+    const days = T_BY_KEY[m[1]].days;
+    const i = days.findIndex(x => x.id === m[2]);
+    if (i < 0) return;
+    if (e.key === 'ArrowLeft' && days[i + 1]) go('#/' + m[1] + '/' + days[i + 1].id);
+    if (e.key === 'ArrowRight' && days[i - 1]) go('#/' + m[1] + '/' + days[i - 1].id);
+    return;
+  }
+
+  if (e.key === 'j' || e.key === 'k') {
+    if (!/^#\/[a-z-]+$/.test(location.hash || '')) return;   // list view only
+    const items = Array.from(document.querySelectorAll('#app .featured, #app .row'));
+    if (!items.length) return;
+    const cur = items.indexOf(document.activeElement);
+    let next = cur === -1 ? (e.key === 'j' ? 0 : items.length - 1) : cur + (e.key === 'j' ? 1 : -1);
+    next = Math.max(0, Math.min(items.length - 1, next));
+    items[next].focus();
+    e.preventDefault();
+  }
+}
+
+// keep Tab focus inside the drawer while it is open (a11y focus-trap)
+function trapTab(e) {
+  if (e.key !== 'Tab' || !elDrawer().classList.contains('open')) return;
+  const list = Array.from(elDrawer().querySelectorAll('a[href], button, [tabindex]:not([tabindex="-1"])'))
+    .filter(el => el.offsetParent !== null);
+  if (!list.length) return;
+  const first = list[0], last = list[list.length - 1];
+  if (e.shiftKey && document.activeElement === first) { last.focus(); e.preventDefault(); }
+  else if (!e.shiftKey && document.activeElement === last) { first.focus(); e.preventDefault(); }
+}
+
+/* ---------- counts & filtering ---------- */
+
+function countDaysWith(days, key, value) {
+  return days.reduce((n, d) => n + ((d[key] || []).includes(value) ? 1 : 0), 0);
+}
+
+function chipList(field) {
+  const days = TI().days;
+  const present = new Set();
+  days.forEach(d => (d[field] || []).forEach(t => present.add(t)));
+  return [...present]
+    .map(t => ({ value: t, label: t, n: countDaysWith(days, field, t) }))
+    .sort((a, b) => b.n - a.n || a.value.localeCompare(b.value));
+}
+
+function filteredDays() {
+  const days = TI().days;
+  if (!state.filter) return days;
+  const { kind, value } = state.filter;
+  const key = kind === 'ticker' ? 'tickers' : 'funds';
+  return days.filter(d => (d[key] || []).includes(value));
+}
+
+function setFilter(kind, value) {
+  if (state.filter && state.filter.kind === kind && state.filter.value === value) state.filter = null;
+  else state.filter = { kind, value };
+  const listHash = '#/' + activeKey;
+  if (location.hash && location.hash !== listHash) go(listHash); // leave read view; route() renders
+  else renderList();
+}
+
+/* ---------- splash / home ---------- */
+// Minimal landing: one card per tier, each linking to that tier's newest piece.
+function renderSplash() {
+  const cards = TIERS.map(t => {
+    const d = t.days[0];               // days are sorted newest-first in init()
+    if (!d) {
+      return `<div class="scard scard-empty">
+          <div class="s-meta"><span class="s-name">${esc(t.label)}</span>
+          <span class="s-date">Nothing published yet</span></div>
+          <div class="s-head s-blurb">${esc(t.blurb || '')}</div></div>`;
+    }
+    return `<div class="scard-wrap"><a class="scard" href="#/${t.key}/${d.id}">
+        <div class="s-meta">
+          <span class="s-name">${esc(t.label)}${isNew(t.key, d.id) ? ' <span class="ndot"></span>' : ''}</span>
+          <span class="s-date">${prettyDate(d.date)}</span>
+        </div>
+        <div class="s-head">${esc(d.headline)}</div>
+      </a></div>`;
+  }).join('');
+
+  document.getElementById('app').innerHTML = `
+    <div class="wrap splash">
+      ${topbar({ minimal: true })}
+      <main id="main" class="splash-main" tabindex="-1">
+        <div class="splash-inner">
+          <div class="splash-cards">${cards}</div>
+          <div class="splash-foot">
+            <button class="whatis" data-whatis>What is this?</button>
+          </div>
+        </div>
+      </main>
+    </div>`;
+
+  wireTopbar();
+  const wi = document.querySelector('#app [data-whatis]');
+  if (wi) wi.addEventListener('click', openWhatIs);
+}
+
+/* "What is this?" reuses the drawer (slide-in from the right + scrim). */
+function openWhatIs() {
+  const tag = document.querySelector('#drawer .drawer-tag');
+  if (tag) tag.textContent = 'What is this?';
+  const src = document.getElementById('drawerSource');
+  if (src) src.style.display = 'none';
+  document.getElementById('drawerBody').innerHTML =
+    '<p>Smart Money Digest tracks what billionaire investors are actually doing, straight from SEC EDGAR filings, before it becomes retail narrative.</p>' +
+    '<p>Four tiers. The <strong>Daily Tape</strong> covers fresh activist 13D stakes and conviction insider buys every trading morning (quiet days publish nothing). <strong>Pattern Watch</strong> runs Saturdays and reads the week: repeat buyers, escalations, clusters the dailies could not see. The <strong>13F Deep Dive</strong> lands each quarter after the filing flood and reads 17 famous funds side by side. <strong>Fund Spotlights</strong> then take one fund’s quarter at a time, close up.</p>' +
+    '<p>Everything is sourced from public filings, with links to the documents. Nothing here is investment advice.</p>' +
+    '<p class="wi-tip">Tip: press <kbd>/</kbd> to search every piece, <kbd>?</kbd> for keyboard shortcuts.</p>';
+  openDrawerShell();
+  document.getElementById('drawerBody').scrollTop = 0;
+}
+
+/* Subscribe drawer — lists the RSS feed URLs with copy buttons (reuses the drawer shell). */
+function feedBase() {
+  if (typeof FEED_BASE !== 'undefined' && FEED_BASE) return FEED_BASE.replace(/\/$/, '');
+  return location.origin + location.pathname.replace(/\/[^/]*$/, '');
+}
+function openSubscribe() {
+  const base = feedBase();
+  const feeds = [{ label: 'All tiers', file: 'feed.xml' }]
+    .concat(TIERS.map(t => ({ label: t.label, file: 'feed-' + t.key + '.xml' })));
+  const tag = document.querySelector('#drawer .drawer-tag');
+  if (tag) tag.textContent = 'Subscribe';
+  const src = document.getElementById('drawerSource');
+  if (src) src.style.display = 'none';
+  const rows = feeds.map(f => {
+    const url = base + '/' + f.file;
+    return `<div class="sub-row">
+        <div class="sub-row-main"><span class="sub-name">${esc(f.label)}</span>
+          <span class="sub-url">${esc(url)}</span></div>
+        <button class="sub-copy" data-copy="${esc(url)}">Copy</button>
+      </div>`;
+  }).join('');
+  const body = document.getElementById('drawerBody');
+  body.innerHTML =
+    '<p>Smart Money Digest publishes as RSS. Paste a feed URL into Readwise Reader (or any RSS app) and every new piece shows up automatically.</p>' +
+    '<div class="sub-list">' + rows + '</div>' +
+    '<p class="sub-hint">Use a single tier feed to follow just the Daily Tape, Pattern Watch, Deep Dives, or Spotlights.</p>';
+  body.querySelectorAll('[data-copy]').forEach(b => {
+    b.addEventListener('click', () => {
+      const url = b.getAttribute('data-copy');
+      const done = () => { b.textContent = 'Copied'; b.classList.add('done'); setTimeout(() => { b.textContent = 'Copy'; b.classList.remove('done'); }, 1400); };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done, done);
+      else done();
+    });
+  });
+  openDrawerShell();
+  body.scrollTop = 0;
+}
+
+/* Quick-find: search headlines/subtitles/tickers/funds across ALL tiers (data is in memory). */
+function openSearch() {
+  const tag = document.querySelector('#drawer .drawer-tag');
+  if (tag) tag.textContent = 'Search';
+  const src = document.getElementById('drawerSource');
+  if (src) src.style.display = 'none';
+  const body = document.getElementById('drawerBody');
+  body.innerHTML =
+    '<input class="search-input" type="search" placeholder="Search all pieces…" aria-label="Search all pieces" autocomplete="off" spellcheck="false">' +
+    '<div class="search-results" id="searchResults"></div>';
+  const input = body.querySelector('.search-input');
+  const results = body.querySelector('#searchResults');
+  const all = TIERS.flatMap(t => t.days.map(d => ({
+    t, d,
+    hay: [d.headline, d.subtitle, ...(d.tickers || []), ...(d.funds || [])].join(' ').toLowerCase()
+  })));
+  const render = () => {
+    const q = input.value.trim().toLowerCase();
+    let list = all;
+    if (q) { const toks = q.split(/\s+/); list = all.filter(x => toks.every(t => x.hay.includes(t))); }
+    list = list.slice(0, 25);
+    if (!list.length) { results.innerHTML = '<p class="empty">No pieces match.</p>'; return; }
+    results.innerHTML = list.map(x =>
+      `<a class="sr-row" href="#/${x.t.key}/${x.d.id}" data-go="#/${x.t.key}/${x.d.id}">` +
+        `<span class="sr-meta">${esc(x.t.label)} · ${prettyDate(x.d.date)}</span>` +
+        `<span class="sr-title">${esc(x.d.headline)}</span></a>`).join('');
+    results.querySelectorAll('[data-go]').forEach(a =>
+      a.addEventListener('click', e => { e.preventDefault(); closeDrawer(); go(a.dataset.go); }));
+  };
+  input.addEventListener('input', render);
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Enter') { const first = results.querySelector('[data-go]'); if (first) { e.preventDefault(); closeDrawer(); go(first.dataset.go); } }
+  });
+  render();
+  openDrawerShell();
+  setTimeout(() => input.focus(), 30);   // override the shell's focus-on-close-button
+}
+
+/* Keyboard shortcuts help (reuses the drawer). */
+function openShortcuts() {
+  const tag = document.querySelector('#drawer .drawer-tag');
+  if (tag) tag.textContent = 'Shortcuts';
+  const src = document.getElementById('drawerSource');
+  if (src) src.style.display = 'none';
+  document.getElementById('drawerBody').innerHTML =
+    '<dl class="kbd-list">' +
+    '<dt><kbd>/</kbd></dt><dd>Search all pieces</dd>' +
+    '<dt><kbd>j</kbd> <kbd>k</kbd></dt><dd>Move down / up the piece list</dd>' +
+    '<dt><kbd>&larr;</kbd> <kbd>&rarr;</kbd></dt><dd>Previous / next piece while reading</dd>' +
+    '<dt><kbd>Esc</kbd></dt><dd>Close this panel</dd>' +
+    '<dt><kbd>?</kbd></dt><dd>Show this help</dd>' +
+    '</dl>';
+  openDrawerShell();
+}
+
+/* Share the canonical (public, server-addressable) page for a piece. */
+function shareEdition(d, btn) {
+  const url = feedBase() + '/' + activeKey + '/' + d.id + '.html';
+  if (navigator.share) { navigator.share({ title: d.headline, url }).catch(() => {}); return; }
+  const done = () => { if (btn) { btn.textContent = 'Copied'; setTimeout(() => { btn.textContent = 'Share'; }, 1400); } };
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done, done);
+  else done();
+}
+
+/* Reading-progress bar (thin top bar); only active in a reading view. */
+let _scrollRAF = 0;
+function onReadScroll() {
+  if (_scrollRAF) return;
+  _scrollRAF = requestAnimationFrame(() => {
+    _scrollRAF = 0;
+    const bar = document.getElementById('readbar');
+    if (!bar) return;
+    const inRead = /^#\/[a-z-]+\/.+/.test(location.hash || '');
+    if (!inRead) { bar.style.width = '0%'; return; }
+    const h = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = (h > 0 ? Math.min(100, (window.scrollY / h) * 100) : 0) + '%';
+  });
+}
+
+/* ---------- list view ---------- */
+
+function renderList() {
+  const days = filteredDays();
+  const f = state.filter;
+
+  const tickers = chipList('tickers');
+  const funds = chipList('funds');
+  const shownTickers = state.showAllTickers ? tickers : tickers.slice(0, TOP_CHIPS);
+  const shownFunds = state.showAllFunds ? funds : funds.slice(0, TOP_CHIPS);
+
+  let tickerRow = shownTickers.map(c => chip('ticker', c, f)).join('');
+  if (tickers.length > TOP_CHIPS) {
+    tickerRow += `<button class="chip more" data-act="toggleTickers">` +
+      (state.showAllTickers ? 'show fewer' : `show all (${tickers.length})`) + `</button>`;
+  }
+  let fundRow = shownFunds.map(c => chip('fund', c, f)).join('');
+  if (funds.length > TOP_CHIPS) {
+    fundRow += `<button class="chip more" data-act="toggleFunds">` +
+      (state.showAllFunds ? 'show fewer' : `show all (${funds.length})`) + `</button>`;
+  }
+
+  const activeNote = f
+    ? `<div class="filter-note">Filtered to <strong>${esc(f.value)}</strong>` +
+      ` — ${days.length} piece${days.length === 1 ? '' : 's'} ` +
+      `<button class="clear" data-act="clear">clear ✕</button></div>`
+    : '';
+
+  const featured = days[0] ? featuredCard(days[0]) : `<p class="empty">No pieces match this filter.</p>`;
+  const rest = days.slice(1).map(rowItem).join('');
+
+  document.getElementById('app').innerHTML = `
+    <main id="main" class="wrap" tabindex="-1">
+      ${topbar()}
+      <p class="tier-blurb">${esc(TI().blurb || '')}</p>
+      <section class="filters">
+        <div class="filter-group">
+          <span class="filter-label">Tickers</span>
+          <div class="chips">${tickerRow || '<span class="muted">—</span>'}</div>
+        </div>
+        <div class="filter-group">
+          <span class="filter-label">Funds</span>
+          <div class="chips">${fundRow || '<span class="muted">—</span>'}</div>
+        </div>
+        ${activeNote}
+      </section>
+      ${featured}
+      ${rest ? `<div class="list">${rest}</div>` : ''}
+    </main>`;
+
+  wireTopbar();
+  document.querySelectorAll('#app [data-act]').forEach(b => {
+    b.addEventListener('click', () => {
+      const act = b.dataset.act;
+      if (act === 'toggleTickers') { state.showAllTickers = !state.showAllTickers; renderList(); }
+      else if (act === 'toggleFunds') { state.showAllFunds = !state.showAllFunds; renderList(); }
+      else if (act === 'clear') { state.filter = null; renderList(); }
+    });
+  });
+  document.querySelectorAll('#app .chip[data-kind]').forEach(c => {
+    c.addEventListener('click', () => setFilter(c.dataset.kind, c.dataset.value));
+  });
+  document.querySelectorAll('#app [data-id]').forEach(a => {
+    a.addEventListener('click', e => { e.preventDefault(); go('#/' + activeKey + '/' + a.dataset.id); });
+  });
+}
+
+function chip(kind, c, f) {
+  const active = f && f.kind === kind && f.value === c.value;
+  return `<button class="chip${active ? ' active' : ''}" data-kind="${kind}" data-value="${esc(c.value)}">` +
+    `${esc(c.label)} <span class="ct">(${c.n})</span></button>`;
+}
+
+function featuredCard(d) {
+  return `<a class="featured" href="#/${activeKey}/${d.id}" data-id="${d.id}">
+      <div class="kicker">Latest ${esc(TI().label)} · ${d.date}${isNew(activeKey, d.id) ? ' <span class="ndot"></span>' : ''}</div>
+      <h1 class="f-title">${esc(d.headline)}</h1>
+      ${d.subtitle ? `<p class="f-sub">${esc(d.subtitle)}</p>` : ''}
+      <div class="f-tags">${(d.tickers || []).map(t => `<span class="tg">${esc(t)}</span>`).join('')}</div>
+      <span class="keepreading">Keep reading →</span>
+    </a>`;
+}
+
+function rowItem(d) {
+  return `<a class="row" href="#/${activeKey}/${d.id}" data-id="${d.id}">
+      <span class="r-date">${d.date}${isNew(activeKey, d.id) ? ' <span class="ndot"></span>' : ''}</span>
+      <span class="r-title">${esc(d.headline)}</span>
+    </a>`;
+}
+
+/* ---------- reading view ---------- */
+
+async function renderRead(id) {
+  const d = TI().days.find(x => x.id === id);
+  markSeen(activeKey, id);
+  const days = TI().days;
+  const idx = days.findIndex(x => x.id === id);
+  const older = idx >= 0 ? days[idx + 1] : null;   // older piece (further back)
+  const newer = idx > 0 ? days[idx - 1] : null;    // newer piece
+  const navHtml =
+    (older ? `<a class="ed-prev" href="#/${activeKey}/${older.id}">← ${prettyDate(older.date)}</a>` : '<span></span>') +
+    (newer ? `<a class="ed-next" href="#/${activeKey}/${newer.id}">${prettyDate(newer.date)} →</a>` : '<span></span>');
+
+  document.getElementById('app').innerHTML = `
+    <main id="main" class="wrap read" tabindex="-1">
+      ${topbar()}
+      <a class="back" href="#/${activeKey}" data-back>← All ${esc(TI().label)} pieces</a>
+      <article class="article">
+        <div class="kicker">${prettyDateFull(d.date)}<span id="readtime"></span><button class="share-btn" data-share aria-label="Share this piece">Share</button></div>
+        <h1 class="a-title">${esc(d.headline)}</h1>
+        ${d.subtitle ? `<p class="a-sub">${esc(d.subtitle)}</p>` : ''}
+        <div class="a-tags">${(d.tickers || []).map(t => `<a class="tg" href="#" data-ticker="${esc(t)}">${esc(t)}</a>`).join('')}</div>
+        <hr/>
+        <div id="body" class="body"><p class="muted">loading…</p></div>
+      </article>
+      <nav class="edition-nav" aria-label="Pieces in this tier">${navHtml}</nav>
+    </main>`;
+
+  wireTopbar();
+  document.querySelectorAll('#app [data-ticker]').forEach(a => {
+    a.addEventListener('click', e => { e.preventDefault(); setFilter('ticker', a.dataset.ticker); });
+  });
+  const sb = document.querySelector('#app [data-share]');
+  if (sb) sb.addEventListener('click', () => shareEdition(d, sb));
+
+  let md;
+  try { md = await getBody(d); }
+  catch (e) { document.getElementById('body').innerHTML = `<p class="empty">Couldn't load this piece. (${esc(String(e))})</p>`; return; }
+
+  const body = document.getElementById('body');
+  body.innerHTML = marked.parse(stripTopMatter(md));
+  enhance(body);
+  styleTickers(body, d.tickers || []);
+  buildTOC(body);
+
+  // reading time from the rendered text (~230 wpm)
+  const words = (body.textContent || '').trim().split(/\s+/).filter(Boolean).length;
+  const rt = document.getElementById('readtime');
+  if (rt && words) rt.textContent = ` · ${Math.max(1, Math.round(words / 230))} min read`;
+}
+
+// drop the original H1 and the metadata lines we render ourselves
+function stripTopMatter(md) {
+  const lines = md.split('\n');
+  const out = [];
+  let h1Stripped = false;
+  for (const ln of lines) {
+    if (!h1Stripped && /^#\s+\S/.test(ln)) { h1Stripped = true; continue; }
+    if (/^\*\*(Headline|Subtitle|Tickers|Funds):\*\*/.test(ln)) continue;
+    out.push(ln);
+  }
+  // collapse any leading blank lines / orphan rule
+  return out.join('\n').replace(/^\s*(?:---\s*)?\n+/, '');
+}
+
+// build an "In this piece" jump list from the ## section headings the pieces use.
+// Scroll by element ref (not a hash link) so it never collides with the app's hash router.
+function buildTOC(body) {
+  const secs = [];
+  Array.from(body.querySelectorAll('h2')).forEach((el, i) => {
+    const label = (el.textContent || '').trim();
+    if (!label || label.length > 90) return;
+    el.id = 'sec-' + i;
+    secs.push({ id: el.id, label });
+  });
+  if (secs.length < 3) return;
+  const toc = document.createElement('nav');
+  toc.className = 'toc';
+  toc.setAttribute('aria-label', 'In this piece');
+  toc.innerHTML = '<div class="toc-h">In this piece</div><ul>' +
+    secs.map(s => `<li><a href="#" data-toc="${s.id}">${esc(s.label)}</a></li>`).join('') + '</ul>';
+  body.parentNode.insertBefore(toc, body);
+  const links = {};
+  toc.querySelectorAll('[data-toc]').forEach(a => {
+    links[a.dataset.toc] = a;
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const t = document.getElementById(a.dataset.toc);
+      if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+  // scroll-spy: highlight the section currently near the top
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(en => {
+        if (en.isIntersecting) {
+          Object.values(links).forEach(l => l.classList.remove('active'));
+          if (links[en.target.id]) links[en.target.id].classList.add('active');
+        }
+      });
+    }, { rootMargin: '-84px 0px -70% 0px' });
+    secs.forEach(s => { const el = document.getElementById(s.id); if (el) obs.observe(el); });
+  }
+}
+
+// Pieces bold their tickers (**WBX**). Any <strong> whose text is one of this piece's
+// tickers becomes a clickable filter chip (skips those inside links).
+function styleTickers(scope, tickers) {
+  if (!tickers.length) return;
+  const set = new Set(tickers);
+  scope.querySelectorAll('strong').forEach(s => {
+    const t = (s.textContent || '').trim().replace(/^\$/, '');
+    if (!set.has(t) || s.closest('a')) return;
+    s.classList.add('cashtag', 'clickable');
+    s.setAttribute('role', 'button');
+    s.setAttribute('tabindex', '0');
+    const fire = () => setFilter('ticker', t);
+    s.addEventListener('click', fire);
+    s.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); fire(); } });
+  });
+}
+
+function enhance(scope) {
+  scope.querySelectorAll('a').forEach(a => {
+    const href = a.getAttribute('href') || '';
+    if (href.startsWith('#/')) {                 // internal piece link
+      a.classList.add('xlink');
+      a.addEventListener('click', e => { e.preventDefault(); go(href); });
+      return;
+    }
+    a.classList.add(/sec\.gov/.test(href) ? 'cite-sec' : 'cite-plain');
+    a.target = '_blank'; a.rel = 'noopener';
+  });
+}
+
+/* ---------- drawer shell ---------- */
+
+// open the drawer and move focus into it; remember the trigger so we can restore focus on close
+function openDrawerShell() {
+  elDrawer()._trigger = document.activeElement;
+  elDrawer().classList.add('open');
+  elDrawer().setAttribute('aria-hidden', 'false');
+  elScrim().hidden = false;
+  const closeBtn = document.getElementById('drawerClose');
+  if (closeBtn) closeBtn.focus();
+}
+
+function closeDrawer() {
+  if (!elDrawer().classList.contains('open')) return;
+  elDrawer().classList.remove('open');
+  elDrawer().setAttribute('aria-hidden', 'true');
+  elScrim().hidden = true;
+  const t = elDrawer()._trigger;
+  elDrawer()._trigger = null;
+  if (t && typeof t.focus === 'function') t.focus();   // restore focus to the trigger
+}
+
+/* ---------- data access (embedded or fetched) ---------- */
+
+async function getBody(day) {
+  if (day.body != null) return day.body;
+  return fetchText(day.path);
+}
+
+/* ---------- topbar (brand + tier nav) + theme ---------- */
+
+function topbar(opts) {
+  const minimal = !!(opts && opts.minimal);
+  const sep = '<span class="sep">·</span>';
+  const links = sep + TIERS.map(t =>
+    `<a class="chan${t.key === activeKey ? ' active' : ''}" data-chan="${t.key}" href="#/${t.key}">${esc(t.label)}` +
+    `${tierHasNew(t) ? '<span class="ndot" aria-label="new pieces"></span>' : ''}</a>`
+  ).join(sep);
+  const nav = minimal ? '' : `<nav class="chan-nav">${links}</nav>`;
+  return `<header class="topbar${minimal ? ' minimal' : ''}">
+      <a class="brand" data-home href="#/" title="Smart Money Digest home">Smart&nbsp;Money</a>
+      ${nav}
+      <div class="spacer"></div>
+      <button class="icon-btn" data-search title="Search (press /)" aria-label="Search pieces">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><line x1="15.2" y1="15.2" x2="21" y2="21" stroke="currentColor" stroke-width="2"/></svg>
+      </button>
+      <button class="sub-btn" data-subscribe title="Subscribe by RSS" aria-label="Subscribe by RSS">Subscribe</button>
+      <button class="theme-toggle" data-theme-toggle title="Toggle light / dark"
+        aria-label="Toggle light or dark theme"
+        aria-pressed="${document.documentElement.getAttribute('data-theme') === 'dark'}">
+        <span class="t-ico" aria-hidden="true"></span></button></header>`;
+}
+
+function wireTopbar() {
+  document.querySelectorAll('#app [data-chan]').forEach(a => {
+    a.addEventListener('click', e => { e.preventDefault(); goTier(a.dataset.chan); });
+  });
+  const back = document.querySelector('#app [data-back]');
+  if (back) back.addEventListener('click', e => { e.preventDefault(); go('#/' + activeKey); });
+  const home = document.querySelector('#app [data-home]');
+  if (home) home.addEventListener('click', e => { e.preventDefault(); goHome(); });
+  const tt = document.querySelector('#app [data-theme-toggle]');
+  if (tt) tt.addEventListener('click', toggleTheme);
+  const sub = document.querySelector('#app [data-subscribe]');
+  if (sub) sub.addEventListener('click', openSubscribe);
+  const srch = document.querySelector('#app [data-search]');
+  if (srch) srch.addEventListener('click', openSearch);
+}
+
+function initTheme() {
+  let t = null;
+  try { t = localStorage.getItem('smd-theme'); } catch (e) {}
+  if (t !== 'light' && t !== 'dark') t = 'light';
+  document.documentElement.setAttribute('data-theme', t);
+}
+function toggleTheme() {
+  const cur = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', cur);
+  const tt = document.querySelector('#app [data-theme-toggle]');
+  if (tt) tt.setAttribute('aria-pressed', String(cur === 'dark'));
+  try { localStorage.setItem('smd-theme', cur); } catch (e) {}
+}
+
+/* ---------- utils ---------- */
+
+function esc(s) {
+  return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+async function fetchText(path) {
+  const r = await fetch(encodeURI(path), { cache: 'no-store' });
+  if (!r.ok) throw new Error(r.status + ' ' + path);
+  return r.text();
+}
+async function fetchJSON(path) { return JSON.parse(await fetchText(path)); }
+
+// PWA: register the service worker on the served site (silently ignored on file://)
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
+}
+
+</script></body></html>
